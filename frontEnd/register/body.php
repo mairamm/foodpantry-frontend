@@ -18,6 +18,7 @@
 </head>
 
 <body>
+	//start of header
     <div>
         <div class="alert alert-success" role="alert" style="background: #ffc629;margin: 0px 0px 1px;"><span style="text-align: center;color: rgb(0,0,0);font-size: 20px;"><strong>Alerts:</strong><a class="alert-link" href="#" style="color: rgb(0,0,0);">Covid-19<strong>|</strong></a><a class="alert-link" href="#" style="color: rgb(0,0,0);">Return to Campus<strong>|</strong></a><a class="alert-link" href="#" style="color: rgb(0,0,0);">CARES Act</a></span></div>
     </div>
@@ -34,7 +35,7 @@
             </div>
         </div>
 	</nav>
-
+	//end of header
     <main class="page lanidng-page"></main>
     <section class="portfolio-block website gradient" style="background: url(&quot;assets/img/gray.png&quot;);">
         <section>
@@ -70,6 +71,41 @@
     <script src="assets/js/Application-Form.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
     <script src="assets/js/theme.js"></script>
-</body>
 
+	//start of footer
+    <div class="footer-clean" style="padding: 0px;">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center" style="background: #0c1975;">
+                    <div class="col-sm-4 col-md-3 item">
+                        <ul>
+                            <li></li>
+                            <li style="color: rgb(255,255,255);">Privacy</li>
+                            <li style="color: rgb(255,255,255);">Politics</li>
+                            <li style="color: rgb(255,255,255);">Accessibility</li>
+                            <li style="color: rgb(255,255,255);">Maps</li>
+                            <li style="color: rgb(255,255,255);">FAQs</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li style="color: rgb(249,249,249);">University</li>
+                            <li style="color: rgb(255,255,255);">Emergency Info</li>
+                            <li style="color: rgb(255,255,255);">Safety Plan</li>
+                            <li style="color: rgb(255,255,255);">Return to Campus</li>
+                        </ul>
+                    </div>
+                    <div class="col-1 col-sm-4 col-md-3 offset-md-0 item">
+                        <ul></ul><small style="color: rgb(255,255,255);"><br/>California State University, Bakersfield 9001 Stockdale Highway Bakersfield, CA 93311 (661)-654-CSUB<br/></small>
+                        <img class="img-fluid float-right" src="../images/food_pantry_image.jpg" width="100" height="100" style="margin: 5px;padding: 5px;"/>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+	//end of footer
+
+</body>
 </html>
