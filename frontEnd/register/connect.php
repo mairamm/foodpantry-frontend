@@ -1,11 +1,14 @@
 <?php
-$db = pg_connect("host=localhost dbname=foodpantry user=foodpantry password=Dadp4Boxrl");
+$servername = "localhost";
+$username = "foodpantry";
+$password = "Dadp4Boxrl";
 
-if($db) {
-    echo '<script>console.log("Connection Successful")</script>';
-}
-else {
-    echo '<script>console.log("Connection Unsuccessful")</script>';
-}
+// Create connection
+$conn = new mysqli($servername, $username, $password);
 
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: \n" . $conn->connect_error);
+}
+echo "Connected successfully\n";
 ?>
