@@ -7,6 +7,10 @@ element.style {
     box-shadow: 0 0 0 .2rem rgba(216,217,219,.5);
 }
 
+.submit {
+    margin-right: 50px;
+}
+
 .navigation-clean-button .navbar-text .action-button:hover {
     background: #66d7d7;
 }

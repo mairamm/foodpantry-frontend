@@ -81,13 +81,15 @@
     <script src="assets/js/Application-Form.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
     <script src="assets/js/theme.js"></script>
-
+<br>
+<span class="submit"><a class="submit" role="button" href="#" style="background: #ffc629;color: rgb(0,0,0);padding: 8px 20px;">Submit</a></span>
+<br>
     <div class="footer-clean" style="padding: 0px;">
         <footer>
             <div class="container">
                 <div class="row justify-content-center" style="background: #0c1975;">
                     <div class="col-sm-4 col-md-3 item">
-                        <ul>
+                        <ul><center>
                             <li></li>
                             <li style="color: rgb(255,255,255);">Privacy</li>
                             <li style="color: rgb(255,255,255);">Politics</li>
@@ -109,7 +111,7 @@
                     <div class="col-1 col-sm-4 col-md-3 offset-md-0 item">
                         <ul></ul><small style="color: rgb(255,255,255);"><br/>California State University, Bakersfield 9001 Stockdale Highway Bakersfield, CA 93311 (661)-654-CSUB<br/></small>
                         <img class="img-fluid float-right" src="../images/food_pantry_image.jpg" width="100" height="100" style="margin: 5px;padding: 5px;"/>
-                    </div>
+                   </center> </div>
                 </div>
             </div>
         </footer>
