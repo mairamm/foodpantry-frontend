@@ -90,21 +90,22 @@
                     <div class="col-sm-4 col-md-3 item">
                         <ul><center>
                             <li></li>
-                            <li style="color: rgb(255,255,255);">Privacy</li>
-                            <li style="color: rgb(255,255,255);">Politics</li>
-                            <li style="color: rgb(255,255,255);">Accessibility</li>
-                            <li style="color: rgb(255,255,255);">Maps</li>
-                            <li style="color: rgb(255,255,255);">FAQs</li>
+                            <li style="color: rgb(255,255,255);"><a href="https://www.csub.edu/privacy/">Privacy</a></li>
+                            <li style="color: rgb(255,255,255);"><a href="https://policies.csub.edu/">Policies</a></li>
+			<li style="color: rgb(255,255,255);"><a href="https://www.csub.edu/equity-inclusion-compliance/ada">Accessibility</a></li>
+			<li style="color: rgb(255,255,255);"><a href="https://www.csub.edu/campusmap/"></a>Maps</li>
+
                         </ul>
                     </div>
                     <div class="col-sm-4 col-md-3 item">
                         <ul>
                             <li></li>
                             <li></li>
-                            <li style="color: rgb(249,249,249);">University</li>
-                            <li style="color: rgb(255,255,255);">Emergency Info</li>
-                            <li style="color: rgb(255,255,255);">Safety Plan</li>
-                            <li style="color: rgb(255,255,255);">Return to Campus</li>
+                            <li style="color: rgb(249,249,249);"><a href="https://www.csub.edu/bas/police/index.html">University Police</a></li>
+                            <li style="color: rgb(255,255,255);"><a href="https://www.csub.edu/">University</a></li>
+			    <li style="color: rgb(255,255,255);"><a href="https://www.csub.edu/bas/policy/CampusSafetyPlan.pdf">Safety Plan</a></li>
+
+                            <li style="color: rgb(255,255,255);"><a href="https://www.csub.edu/sustainability/foodpantry/FAQ_FoodPantry/index.html">FAQS</a></li>
                         </ul>
                     </div>
                     <div class="col-1 col-sm-4 col-md-3 offset-md-0 item">
