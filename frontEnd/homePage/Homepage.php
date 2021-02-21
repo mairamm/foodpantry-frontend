@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-    <title>Homepage_SeniorSem (Backup 1605911668565) (Backup 1608154078662)</title>
+    <title>Homepage</title>
     <link rel="stylesheet" href="Footer-Clean.css"/>
     <link rel="stylesheet" href="Header-Blue.css"/>
     <link rel="stylesheet" href="Header-Dark.css"/>
@@ -13,10 +13,8 @@
     <link rel="stylesheet" href="Footer.css"/>
     <link rel="stylesheet" href="Nav-Bar.css"/>
     <link rel="stylesheet" href="Buttons.css"/>
-    <link rel="stylesheet" href="styles.css"/>
-
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-	
+    <link rel="stylesheet" href="styles.css"/>	
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 
 <body style="color: rgb(0,0,0);font-size: 15px;text-align: center;">
@@ -137,22 +135,23 @@
                     <div class="col-sm-4 col-md-3 item">
                         <ul>
                             <li></li>
-                            <li style="color: rgb(255,255,255);">Privacy</li>
-                            <li style="color: rgb(255,255,255);">Politics</li>
-                            <li style="color: rgb(255,255,255);">Accessibility</li>
-                            <li style="color: rgb(255,255,255);">Maps</li>
-                            <li style="color: rgb(255,255,255);">FAQs</li>
+                            <li style="color: rgb(255,255,255);"><a href="https://www.csub.edu/privacy/">Privacy</a></li>
+                            <li style="color: rgb(255,255,255);"><a href="https://policies.csub.edu/">Policies</a></li>
+                            <li style="color: rgb(255,255,255);"><a href="https://www.csub.edu/equity-inclusion-compliance/ada">Accessibility</a></li>
+                            <li style="color: rgb(255,255,255);"><a href="https://www.csub.edu/campusmap/">Maps</a></li>
+
                         </ul>
                     </div>
                     <div class="col-sm-4 col-md-3 item">
                         <ul>
                             <li></li>
                             <li></li>
-                            <li style="color: rgb(249,249,249);">University</li>
-                            <li style="color: rgb(255,255,255);">Emergency Info</li>
-                            <li style="color: rgb(255,255,255);">Safety Plan</li>
-                            <li style="color: rgb(255,255,255);">Return to Campus</li>
-                        </ul>
+                            <li style="color: rgb(249,249,249);"><a href="https://www.csub.edu/bas/police/index.html">University Police</a></li>
+                            <li style="color: rgb(255,255,255);"><a href="https://www.csub.edu/">University</a></li>
+                            <li style="color: rgb(255,255,255);"><a href="https://www.csub.edu/bas/policy/CampusSafetyPlan.pdf">SAfety Plan</a></li>
+
+                            <li style="color: rgb(255,255,255);"><a href="https://www.csub.edu/sustainability/foodpantry/FAQ_FoodPantry/index.html">FAQs</a></li>
+			</ul>
                     </div>
                     <div class="col-1 col-sm-4 col-md-3 offset-md-0 item">
                         <ul></ul><small style="color: rgb(255,255,255);"><br/>California State University, Bakersfield 9001 Stockdale Highway Bakersfield, CA 93311 (661)-654-CSUB<br/></small>
