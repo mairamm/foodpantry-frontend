@@ -1,19 +1,8 @@
 <?php
 
-$servername = "localhost";
-$username = "foodpantry";
-$password = "Dadp4Boxrl";
-$database = "foodpantry";
-
-// Create connection
-
-$conn = mysqli_connect($servername, $username, $password, $database);
-
-// Check connection
-
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
+$conn = mysqli_connect('localhost', 'foodpantry2', 'Dadp4Boxrl', 'foodpantry');
+if (!$conn) {
+    die("Connection failed \n");
 }
 
-echo "-connected successfully to db-";
 ?>
