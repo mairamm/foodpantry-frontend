@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
-    <link rel="stylesheet" href="Footer-Clean.css">
-    <link rel="stylesheet" href="Header-Blue.css">
-    <link rel="stylesheet" href="Header-Dark.css">
+    <link rel="stylesheet" href="./assets/css/students/Footer-Clean.css">
+    <link rel="stylesheet" href="./assets/css/students/Header-Blue.css">
+    <link rel="stylesheet" href="./assets/css/students/Header-Dark.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
-    <link rel="stylesheet" href="Lightbox-Gallery.css">
-    <link rel="stylesheet" href="Navigation-with-Button.css">
-    <link rel="stylesheet" href="Simple-Slider.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./assets/css/students/Lightbox-Gallery.css">
+    <link rel="stylesheet" href="./assets/css/students/Navigation-with-Button.css">
+    <link rel="stylesheet" href="./assets/css/Simple-Slider.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 <style>
