@@ -1,1 +1,0 @@
-[19-Feb-2021 09:46:51 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: FATAL:  password authentication failed for user "foodpantry" in /home/foodpantry2/public_html/foodpantry-frontend/frontEnd/register/connect.php on line 2
