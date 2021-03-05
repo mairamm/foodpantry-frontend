@@ -5,27 +5,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Home - Brand</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
-    <link rel="stylesheet" href="ionicons.min.css">
-    <link rel="stylesheet" href="Application-Form.css">
+    <link rel="stylesheet" href="./assets/css/registration/ionicons.min.css">
+    <link rel="stylesheet" href="./assets/css/registration/Application-Form.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
-    <link rel="stylesheet" href="select.css">
-    <link rel="stylesheet" href="Footer-Clean.css"/>
-    <link rel="stylesheet" href="Header-Blue.css"/>
-    <link rel="stylesheet" href="Header-Dark.css"/>
-    <link rel="stylesheet" href="Lightbox-Gallery.css"/>
-    <link rel="stylesheet" href="Navigation-with-Buttons.css"/>
-    <link rel="stylesheet" href="Simple-Slider.css"/>
-    <link rel="stylesheet" href="Carousel.css"/>
-    <link rel="stylesheet" href="Footer.css"/>
-    <link rel="stylesheet" href="Nav-Bar.css"/>
-    <link rel="stylesheet" href="Buttons.css"/>
-    <link rel="stylesheet" href="styles.css"/>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
- 
-
+    <link rel="stylesheet" href="./assets/css/registration/select.css">
+    <link rel="stylesheet" href="./assets/css/registration/Footer-Clean.css"/>
+    <link rel="stylesheet" href="./assets/css/registration/Header-Blue.css"/>
+    <link rel="stylesheet" href="./assets/css/registration/Header-Dark.css"/>
+    <link rel="stylesheet" href="./assets/css/registration/Lightbox-Gallery.css"/>
+    <link rel="stylesheet" href="./assets/css/registration/Navigation-with-Buttons.css"/>
+    <link rel="stylesheet" href="./assets/css/registration/Simple-Slider.css"/>
+    <link rel="stylesheet" href="./assets/css/registration/Carousel.css"/>
+    <link rel="stylesheet" href="./assets/css/registration/Footer.css"/>
+    <link rel="stylesheet" href="./assets/css/registration/Nav-Bar.css"/>
+    <link rel="stylesheet" href="./assets/css/registration/Buttons.css"/>
+    <link rel="stylesheet" href="./assets/css/registration/styles.css"/>
 </head>
 
 <body>
@@ -46,11 +42,11 @@
         </div>
 	</nav>
     <main class="page lanidng-page"></main>
-    <section class="portfolio-block website gradient" style="background: url(&quot;assets/img/gray.png&quot;);">
+    <section class="portfolio-block website gradient" style="background: url(&quot;./assets/img/gray.png&quot;);">
         <section>
             <h1 class="text-center text-capitalize" style="font-size: 20px;color: #0c1975;"><br>Create your account by filling the form below.<br></h1>
             <div class="container">
-                <form id="application-form" style="background: url(&quot;assets/img/white.jpg&quot;);color: #0c1975;">
+                <form id="application-form" style="background: url(&quot;./assets/img/white.jpg&quot;);color: #0c1975;">
                     <div class="form-group">
                         <div class="form-row">
                             <div class="col">
@@ -74,12 +70,12 @@
             </div>
         </section>
     </section>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/Application-Form-1.js"></script>
-    <script src="assets/js/Application-Form.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/Application-Form-1.js"></script>
+    <script src="./assets/js/Application-Form.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
-    <script src="assets/js/theme.js"></script>
+    <script src="./assets/js/theme.js"></script>
 <br>
 <span class="submit"><a class="submit" role="button" href="#" style="background: #ffc629;color: rgb(0,0,0);padding: 8px 20px;">Submit</a></span>
 <br>
@@ -110,7 +106,7 @@
                     </div>
                     <div class="col-1 col-sm-4 col-md-3 offset-md-0 item">
                         <ul></ul><small style="color: rgb(255,255,255);"><br/>California State University, Bakersfield 9001 Stockdale Highway Bakersfield, CA 93311 (661)-654-CSUB<br/></small>
-                        <img class="img-fluid float-right" src="../images/food_pantry_image.jpg" width="100" height="100" style="margin: 5px;padding: 5px;"/>
+                        <img class="img-fluid float-right" src="./assets/img/foodPantryLogo.jpg" width="100" height="100" style="margin: 5px;padding: 5px;"/>
                    </center> </div>
                 </div>
             </div>
