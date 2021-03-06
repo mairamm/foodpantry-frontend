@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
 
+<head>
+<?php
+    include('skel/header.php');
+?>
+</head>
 
 <body>
     <main class="page lanidng-page"></main>
