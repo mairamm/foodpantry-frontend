@@ -5,12 +5,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 <title>worker</title>
-<link rel="stylesheet" href="bootstrap.min.css">
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="Bootstrap.min.js">
-<link rel="stylesheet" href="jquery.min.js">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-</head>
+<?php
+include('skel/header.php');
+?>
 
 <body>
 <div>
