@@ -1,8 +1,4 @@
 <head>
-<?php
-# for connecting with mysql db
-include('connect.php');
-?>
 </head>
 <title>Barcode</title>
 <style>
@@ -40,7 +36,8 @@ $printText='true';                      # to print text below barcode itself
 # Outputs barcode via echoing barcode.php
 if($barcodeText != '') {
   echo '<h4>Barcode:</h4>';
-  echo '<img class="barcode" alt="'.$barcodeText.'" src="barcode.php?text='.$barcodeText.'&codetype='.$barcodeType.'&orientation='.$barcodeDisplay.'&size='.$barcodeSize.'&print='.$printText.'"/>';
+  echo '<img class="barcode" alt="'.$barcodeText.'" src="barcode.php?text='.$barcodeText.'&codetype='.$barcodeType.'&orientation='.$barcodeDisplay.'&size='.$barcodeSize.'&print='.$printText.'">';
+  #echo '<img class="img-fluid float-right bounce animated" src="../images/#food_pantry_image.jpg" width="100" height="100" style="margin: 5px;padding: #5px;">';
 } else {
   echo '<div class="alert alert-danger">Enter product name or number to generate barcode!</div>';
 }
