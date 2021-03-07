@@ -10,7 +10,7 @@
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#" style="color: rgb(255,255,255);">Contact</a>
                         <div class="dropdown-menu"><a class="dropdown-item" href="#">Phone number</a><a class="dropdown-item" href="#">Location</a></div>
                     </li>
-                </ul><span class="navbar-text actions"><a class="btn btn-light action-button" role="button" href="#" style="background: #ffc629;color: rgb(0,0,0);padding: 8px 20px;">Sign up</a></span>
+                </ul><span class="navbar-text actions"><a class="btn btn-light action-button" role="button" href="http://delphi.cs.csubak.edu/~abattle/foodpantry-frontend/restrucured/registration.php" style="background: #ffc629;color: rgb(0,0,0);padding: 8px 20px;">Sign up</a></span>
             </div>
         </div>
 	</nav>
