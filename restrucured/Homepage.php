@@ -1,21 +1,9 @@
 <!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-    <title>Homepage</title>
-    <link rel="stylesheet" href="/assets/css/homePage/Footer-Clean.css"/>
-    <link rel="stylesheet" href="/assets/css/homePage/Header-Blue.css"/>
-    <link rel="stylesheet" href="/assets/css/homePage/Header-Dark.css"/>
-    <link rel="stylesheet" href="/assets/css/homePage/Lightbox-Gallery.css"/>
-    <link rel="stylesheet" href="/assets/css/homePage/Navigation-with-Buttons.css"/>
-    <link rel="stylesheet" href="/assets/css/homePage/Simple-Slider.css"/>
-    <link rel="stylesheet" href="/assets/css/homePage/Carousel.css"/>
-    <link rel="stylesheet" href="/assets/css/homePage/Footer.css"/>
-    <link rel="stylesheet" href="/assets/css/homePage/Nav-Bar.css"/>
-    <link rel="stylesheet" href="/assets/css/homePage/Buttons.css"/>
-    <link rel="stylesheet" href="/assets/css/homePage/styles.css"/>	
-    <link rel="stylesheet" href="/assets/css/lib/bootstrap.min.css"/>	
-
+<?php
+	include('skel/header.php');
+?>
 </head>
 
 <body style="color: rgb(0,0,0);font-size: 15px;text-align: center;">
@@ -26,7 +14,7 @@
         <div class="container"><a class="navbar-brand" href="#" style="color: rgb(255,255,255);font-size: 35px;font-style: normal;font-family: Bitter, serif;">Food Pantry</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#" style="color: rgb(255,255,255);">Donations</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="https://www.csub.edu/sustainability/foodpantry/FAQ_FoodPantry/Food%20Pantry%20Donation%20Suggestions.pdf" style="color: rgb(255,255,255);">Donations</a></li>
                     <li class="nav-item"><a class="nav-link" href="#" style="color: rgb(255,255,255);">Inventory</a></li>
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#" style="color: rgb(255,255,255);">Contact</a>
                         <div class="dropdown-menu"><a class="dropdown-item" href="#">Phone number</a><a class="dropdown-item" href="#">Location</a></div>
