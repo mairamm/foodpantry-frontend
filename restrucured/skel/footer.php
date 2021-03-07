@@ -1,3 +1,4 @@
+</body>
     <div class="footer-clean" style="padding: 0px;">
         <footer>
             <div class="container">
@@ -23,9 +24,9 @@
                     </div>
                     <div class="col-1 col-sm-4 col-md-3 offset-md-0 item">
                         <ul></ul><small style="color: rgb(255,255,255);"><br/>California State University, Bakersfield 9001 Stockdale Highway Bakersfield, CA 93311 (661)-654-CSUB<br/></small>
-                        <img class="img-fluid float-right" src="../images/food_pantry_image.jpg" width="100" height="100" style="margin: 5px;padding: 5px;"/>
                     </div>
                 </div>
             </div>
         </footer>
     </div>
+</html>
