@@ -3,6 +3,7 @@
 
 <?php
     include('skel/header.php');
+    include('skel/navbarReg.php');
 ?>
 
 <body>
@@ -46,7 +47,9 @@
 <br>
 
 </body>
+
 <?php
     include('skel/footer.php');
 ?>
+
 </html>
