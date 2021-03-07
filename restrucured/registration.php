@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 
+<?php
+    include('skel/header.php');
+    include('skel/navbarReg.php');
+?>
 
 <body>
     <main class="page lanidng-page"></main>
@@ -43,4 +47,9 @@
 <br>
 
 </body>
+
+<?php
+    include('skel/footer.php');
+?>
+
 </html>
