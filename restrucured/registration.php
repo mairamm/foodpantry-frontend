@@ -35,8 +35,8 @@
 
                 <br>
                 <span class="submit"><a class="submit" role="button" href="#" style="background: #ffc629;color: rgb(0,0,0);padding: 8px 20px;">Sign me up!</a></span>
-                </br>
-
+                <br>
+<br>
                 </form>
             </div>
         </section>
