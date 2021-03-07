@@ -27,6 +27,11 @@
                     <div class="form-group">
                         <p><strong>Password&nbsp;</strong><span class="text-danger">*</span></p><input class="form-control" type="text" required="" name="">
                     </div>
+
+                <br>
+                <span class="submit"><a class="submit" role="button" href="#" style="background: #ffc629;color: rgb(0,0,0);padding: 8px 20px;">Log in</a></span>
+                </br>
+
                 </form>
             </div>
         </section>
@@ -37,9 +42,6 @@
     <script src="./assets/js/Application-Form.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
     <script src="./assets/js/theme.js"></script>
-<br>
-<span class="submit"><a class="submit" role="button" href="#" style="background: #ffc629;color: rgb(0,0,0);padding: 8px 20px;">Submit</a></span>
-<br>
 
 </body>
 
