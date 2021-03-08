@@ -24,8 +24,9 @@
                         <div class="dropdown-menu"><a class="dropdown-item" href="#" style="color: rgb(255,255,255);font-family: 'Roboto Slab', serif;">Phone number</a><a class="dropdown-item" href="#">Location</a></div>
                     </li>
 
-                </ul><span class="navbar-text actions"><a class="btn btn-primary" role="button" href="#" style="background: #ffc629;color: rgb(12, 25, 117);font-family: 'Roboto Slab', serif;float: right;">Login</a><a class="btn btn-primary" role="button" href="http://delphi.cs.csubak.edu/~foodpantry2/foodpantry-frontend/frontEnd/register/" style="background: #ffc629;color: rgb(12, 25, 117);font-family: 'Roboto Slab', serif;float: right;">Sign Up</a></span>
+                </ul>
             </div>
+    <span class="navbar-text actions"><a class="btn btn-primary" role="button" href="#" style="background: #ffc629;color: rgb(12, 25, 117);font-family: 'Roboto Slab', serif;float: right;">Login</a><a class="btn btn-primary" role="button" href="http://delphi.cs.csubak.edu/~foodpantry2/foodpantry-frontend/frontEnd/register/" style="background: #ffc629;color: rgb(12, 25, 117);font-family: 'Roboto Slab', serif;float: right;">Sign Up</a></span>
         </div>
     </nav>
 </body>
