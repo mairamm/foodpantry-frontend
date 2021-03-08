@@ -6,9 +6,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@310;400;700&display=swap" rel="stylesheet">
 
-<body style="color: rgb(0,0,0);font-size: 17px;text-align: center;">
+<body style="color: rgb(0,0,0);font-size: 17px;">
     <div>
-        <div class="alert alert-success" role="alert" style="background: #ffc629;margin: 0px 0px 1px;"><span style="text-align: center;color: rgb(0,0,0);font-size: 18px;font-family: 'Quattrocento Sans', sans-serif;"><i class="far fa-bell"></i><strong>Alerts: </strong><a class="link" href="#" style="color: rgb(0,0,0);font-family: 'Quattrocento Sans', sans-serif;"> Covid-19 | </a><a class="link" href="#" style="color: rgb(0,0,0);font-family: 'Quattrocento Sans', sans-serif;">Return to Campus|</a><a class="link" href="#" style="color: rgb(0,0,0);font-family: 'Quattrocento Sans', sans-serif;"> CARES Act</a></span></div>
+        <div class="alert alert-success" role="alert" style="background: #ffc629;margin: 0px 0px 1px;text-align: center;"><span style="text-align: center;color: rgb(0,0,0);font-size: 18px;font-family: 'Quattrocento Sans', sans-serif;"><i class="far fa-bell"></i><strong>Alerts: </strong><a class="link" href="#" style="color: rgb(0,0,0);font-family: 'Quattrocento Sans', sans-serif;"> Covid-19 | </a><a class="link" href="#" style="color: rgb(0,0,0);font-family: 'Quattrocento Sans', sans-serif;">Return to Campus|</a><a class="link" href="#" style="color: rgb(0,0,0);font-family: 'Quattrocento Sans', sans-serif;"> CARES Act</a></span></div>
     </div>
 
     <nav class="navbar navbar-lit navbar-expand-md navigation-clean-button" style="background: #0c1975;">
