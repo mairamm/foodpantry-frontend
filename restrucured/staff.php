@@ -5,10 +5,7 @@
 ?>
 
 
+<br>
+<br>
 
-
-
-<?php
-    include('skel/footer.php');
-?>
 

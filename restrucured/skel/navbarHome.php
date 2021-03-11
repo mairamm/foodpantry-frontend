@@ -25,7 +25,7 @@
 
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#" style="color: rgb(255,255,255);font-family: 'Roboto Slab', serif;"><strong>Contact</strong></a>
 
-                        <div class="dropdown-menu"><a class="dropdown-item" href="#" style="color: rgb(255,255,255);font-family: 'Roboto Slab', serif;"><strong>Phone number</strong></a><a class="dropdown-item" href="#"><strong>Location</strong></a></div>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="#" style="color: rgb(255,255,255);font-family: 'Roboto Slab', serif;"><strong>661-654-FOOD</strong></a><a class="dropdown-item" href="#"><strong>foodpantry@csub.edu</strong></a></div>
                     </li>
 
                 </ul>
