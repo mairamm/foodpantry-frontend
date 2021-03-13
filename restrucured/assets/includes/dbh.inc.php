@@ -1,3 +1,4 @@
+<?php
 # This file's purpose is to initiate a connection to the foodpantry db
 # This file can be included in any other page to establish a connection
 
