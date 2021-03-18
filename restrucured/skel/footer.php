@@ -1,5 +1,5 @@
 </body>
-    <div class="footer-clean" style="padding: 0px;">
+    <div class="footer-clean">
         <footer>
             <div class="container">
                 <div class="row justify-content-center" style="background: #0c1975;">
