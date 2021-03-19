@@ -1,5 +1,7 @@
 <?php
+//include handles connection to database
 include './assets/includes/dbh.inc.php';
+//displays errors and warnings
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -11,7 +13,8 @@ $prodid mysqli_real_escape_string($conn, $_POST['Prod_ID']);
  $expirationdate mysqli_real_escape_string($conn, $_POST['expiration_date']);
  $brandname mysqli_real_escape_string($conn, $_POST['Brand_Name']);
  $producetype mysqli_real_escape_string($conn, $_POST['Produce_type']);
- 
+
+//will insert data from the user into the inventory 
  $sql = "INSERT INTO inventory(prodid, brandid, quantity, pointcost, expirationdate, brandname, producetype) VALUES('" . $prodid . "','" . $brandid . "','" . $quantity . "','" . $pointcost . "','" . $expirationdate . "','" $brandname . "','" $producetype ."',0 )";
 
  if(mysqli_query($conn, $sql)) {
