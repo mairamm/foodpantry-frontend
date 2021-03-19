@@ -1,23 +1,17 @@
 <!DOCTYPE html>
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-    <title>Homepage</title>
-    <link rel="stylesheet" href="/assets/css/homePage/Footer-Clean.css"/>
-    <link rel="stylesheet" href="/assets/css/homePage/Header-Blue.css"/>
-    <link rel="stylesheet" href="/assets/css/homePage/Header-Dark.css"/>
-    <link rel="stylesheet" href="/assets/css/homePage/Lightbox-Gallery.css"/>
-    <link rel="stylesheet" href="/assets/css/homePage/Navigation-with-Buttons.css"/>
-    <link rel="stylesheet" href="/assets/css/homePage/Simple-Slider.css"/>
-    <link rel="stylesheet" href="/assets/css/homePage/Carousel.css"/>
-    <link rel="stylesheet" href="/assets/css/homePage/Footer.css"/>
-    <link rel="stylesheet" href="/assets/css/homePage/Nav-Bar.css"/>
-    <link rel="stylesheet" href="/assets/css/homePage/Buttons.css"/>
-    <link rel="stylesheet" href="/assets/css/homePage/styles.css"/>	
-    <link rel="stylesheet" href="/assets/css/lib/bootstrap.min.css"/>	
+<html>
 
+<div style="background-image: url('https://3.bp.blogspot.com/-gtWwwBppZyU/XBLm3TuUrGI/AAAAAAAABX8/fkFVUacEpakT2T6bvZKDzN0bNvsiEdfbQCHMYCw/s1600/1280x1024-light-gray-solid-color-background.jpg');">
+
+<head>
+<?php
+    include('skel/header.php');
+    include('skel/navbarHome.php');
+?>
+    <link rel="stylesheet" href="./assets/css/lib/bootstrap.min.css">
 </head>
 
+<<<<<<< HEAD
 <body style="color: rgb(0,0,0);font-size: 15px;text-align: center;">
     <div>
         <div class="alert alert-success" role="alert" style="background: #ffc629;margin: 0px 0px 1px;"><span style="text-align: center;color: rgb(0,0,0);font-size: 20px;"><strong>Alerts:</strong><a class="alert-link" href="#" style="color: rgb(0,0,0);">Covid-19<strong>|</strong></a><a class="alert-link" href="#" style="color: rgb(0,0,0);">Return to Campus<strong>|</strong></a><a class="alert-link" href="#" style="color: rgb(0,0,0);">CARES Act</a></span></div>
@@ -60,107 +54,24 @@
                 <li data-target="#carousel-1" data-slide-to="3"></li>
                 <li data-target="#carousel-1" data-slide-to="4"></li>
             </ol>
+=======
+<section class="page-section clearfix">
+    <div class="container">
+        <div class="intro"><img class="img-fluid intro-img mb-3 mb-lg-0 rounded" src="./assets/img/comeSign.jpg">
+            <div class="text-center intro-text p-5 rounded bg-faded">
+                <h2 class="section-heading mb-4"><span class="section-heading-upper">About Us</span><span class="section-heading-lower">Food Pantry</span></h2>
+                <p class="mb-3"><p style="font-size: 16px;">The CSUB Food Pantry is open to CSUB students, staff, and faculty.
+                <br>The Food Pantry is guided by the CSUB Food and Housing Security Committee, the Sustainability Department, and the Executive Director of Associated Students, Inc. The project goals are to increase food security, reduce food waste, and expand nutritional offerings at CSU Bakersfield.
+                <br>Due to the temporary closure of the CSUB campus, the CSUB Food Pantry will have reduced hours of operation beginning March 18th, 2020.</p></p>
+>>>>>>> fdd08cf01adb18c89bf9628008b30cd2c5d0b6b3
         </div>
     </div>
-    <div>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <p style="margin: 0px 0px 0px;">How does it work?</p>
-                    <p><br />Each visitor gets one visit per week and up to 16 points per visit. Each item in stock have unique points given<br /></p>
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>1 POINT</th>
-                                    <th>2 POINT</th>
-                                    <th>3 POINT</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Side Dish or Non-Food Item</td>
-                                    <td>One Meal</td>
-                                    <td>Items Lasting Multiple Meals</td>
-                                </tr>
-                                <tr>
-                                    <td>Granola Bar</td>
-                                    <td>Canned Soup</td>
-                                    <td>Box of Pasta</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead>
-                                <tr></tr>
-                            </thead>
-                            <tbody>
-                                <tr></tr>
-                                <tr>
-                                    <td>Canned Fruit</td>
-                                    <td>Chili</td>
-                                    <td>Boxed Cereal</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead>
-                                <tr></tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Full-Size Toiletry Item</td>
-                                    <td>Top Ramen</td>
-                                    <td>Dry Beans</td>
-                                </tr>
-                                <tr>
-                                    <td>Up to FOUR 1 point items</td>
-                                    <td>Up to THREE 2 point items</td>
-                                    <td>Up to THREE 3 point items</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer-clean" style="padding: 0px;">
-        <footer>
-            <div class="container">
-                <div class="row justify-content-center" style="background: #0c1975;">
-                    <div class="col-sm-4 col-md-3 item">
-                        <ul>
-                            <li></li>
-                            <li style="color: rgb(255,255,255);"><a href="https://www.csub.edu/privacy/">Privacy</a></li>
-                            <li style="color: rgb(255,255,255);"><a href="https://policies.csub.edu/">Policies</a></li>
-                            <li style="color: rgb(255,255,255);"><a href="https://www.csub.edu/equity-inclusion-compliance/ada">Accessibility</a></li>
-                            <li style="color: rgb(255,255,255);"><a href="https://www.csub.edu/campusmap/">Maps</a></li>
+</section>
 
-                        </ul>
-                    </div>
-                    <div class="col-sm-4 col-md-3 item">
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li style="color: rgb(249,249,249);"><a href="https://www.csub.edu/bas/police/index.html">University Police</a></li>
-                            <li style="color: rgb(255,255,255);"><a href="https://www.csub.edu/">University</a></li>
-                            <li style="color: rgb(255,255,255);"><a href="https://www.csub.edu/bas/policy/CampusSafetyPlan.pdf">SAfety Plan</a></li>
 
-                            <li style="color: rgb(255,255,255);"><a href="https://www.csub.edu/sustainability/foodpantry/FAQ_FoodPantry/index.html">FAQs</a></li>
-			</ul>
-                    </div>
-                    <div class="col-1 col-sm-4 col-md-3 offset-md-0 item">
-                        <ul></ul><small style="color: rgb(255,255,255);"><br/>California State University, Bakersfield 9001 Stockdale Highway Bakersfield, CA 93311 (661)-654-CSUB<br/></small>
-                        <img class="img-fluid float-right" src="./assets/img/foodPantryLogo.jpg" width="100" height="100" style="margin: 5px;padding: 5px;"/>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
-</body>
+
+<?php
+    include('skel/footer.php');
+?>
+
 </html>
