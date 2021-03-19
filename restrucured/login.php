@@ -5,6 +5,8 @@
     include('skel/navbarLogin.php');
 ?>
 
+
+
 <body>
     <main class="page lanidng-page"></main>
     <section class="portfolio-block website gradient" style="background: url(&quot;./assets/img/gray.png&quot;);">
@@ -43,6 +45,8 @@
     <script src="./assets/js/theme.js"></script>
 
 </body>
+
+
 
 <?php
     include('skel/footer.php');
