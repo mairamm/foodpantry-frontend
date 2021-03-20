@@ -11,7 +11,7 @@ error_reporting(E_ALL);
 //$prodid = mysqli_real_escape_string($conn, $_POST['prod-id']);
 //$brandid = mysqli_real_escape_string($conn, $_POST['brand-id']);
 
-$sql1 = "DELETE FROM inventory WHERE prod-id = 8";
+$sql1 = "DELETE FROM inventory WHERE `prod-id` = 8";
 //$sql2 = "DELETE FROM `brand-type` WHERE brand-id LIKE '%" . $brandid . "%'";
 
 if(mysqli_query($conn, $sql1))
