@@ -2,8 +2,9 @@
 <html>
 
 <?php
+    //include('queries/update_inv.php');
     include('skel/header.php');
-    include('skel/navbarAdd.php');
+    include('skel/navbarUpdate.php');
 ?>
 
 <body>
@@ -33,7 +34,7 @@
                     </div>
 
                 <br>
-                <span class="submit"><a class="submit" role="button" href="#" style="background: #ffc629;color: rgb(0,0,0);padding: 8px 20px;">ADD</a></span>
+                <span class="submit"><a class="submit" role="button" href="#" style="background: #ffc629;color: rgb(0,0,0);padding: 8px 20px;">UPDATE</a></span>
                 <br>
 <br>
                 </form>

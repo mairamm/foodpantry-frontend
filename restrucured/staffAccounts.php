@@ -1,7 +1,7 @@
 
 <?php
     include('skel/header.php');
-    include('skel/navbarStaff.php');
+    include('skel/navbarAccounts.php');
 ?>
 
 
