@@ -8,10 +8,10 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-//$prodid = mysqli_real_escape_string($conn, $_POST['prod-id']);
+$prodid = mysqli_real_escape_string($conn, $_POST['prod-id']);
 //$brandid = mysqli_real_escape_string($conn, $_POST['brand-id']);
 
-$sql1 = "DELETE FROM inventory WHERE `prod-id` = 8";
+$sql1 = "DELETE FROM inventory WHERE `prod-id` LIKE '%" .$prodid . "'";
 //$sql2 = "DELETE FROM `brand-type` WHERE brand-id LIKE '%" . $brandid . "%'";
 
 if(mysqli_query($conn, $sql1))
