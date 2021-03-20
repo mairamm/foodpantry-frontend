@@ -3,7 +3,8 @@
 
 <?php
     include('skel/header.php');
-    include('skel/navbarAdd.php');
+    include('skel/navbarDelete.php');
+    include('queries/delete_item.php');
 ?>
 
 <body>
@@ -17,23 +18,9 @@
                             <div class="col">
                                 <p><strong>Item ID</strong>&nbsp;<span class="text-danger">*</span></p><input class="form-control" type="ID" required="" name="">
                             </div>
-                            <div class="col">
-                                <p><strong>Item Name</strong>&nbsp;<span class="text-danger">*</span></p><input class="form-control" type="name" required="" name="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <p><strong>Quantity</strong><span class="text-danger">*</span></p><input class="form-control" type="quantity" name="" placeholder="">
-                    </div>
-                    <div class="form-group">
-                        <p><strong>Points Cost</strong><span class="text-danger">*</span></p><input class="form-control" type="pc" required="" name="">
-                    </div>
-                    <div class="form-group">
-                        <p><strong>Expiration Date</strong><span class="text-danger">*</span></p><input class="form-control" type="ed" required="" name="">
-                    </div>
-
+                            
                 <br>
-                <span class="submit"><a class="submit" role="button" href="#" style="background: #ffc629;color: rgb(0,0,0);padding: 8px 20px;">ADD</a></span>
+                <span class="submit"><a class="submit" role="button" href="#" style="background: #ffc629;color: rgb(0,0,0);padding: 8px 20px;">DELETE</a></span>
                 <br>
 <br>
                 </form>
