@@ -20,8 +20,8 @@
                             </div>
                             
                 <br>
-                <span class="submit"><a class="submit" role="button" href="#" style="background: #ffc629;color: rgb(0,0,0);padding: 8px 20px;">DELETE</a></span>
-                <br>
+<input type="submit" value="submit" style="background: #ffc629;color: rgb(0,0,0);padding: 8px 20px;">		
+<br>
 <br>
                 </form>
             </div>

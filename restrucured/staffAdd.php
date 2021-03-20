@@ -4,9 +4,11 @@
 <?php
     include('skel/header.php');
     include('skel/navbarAdd.php');
+    //include('queries/add_item.php');
 ?>
 
 <body>
+<!--<form action="queries/add_item.php" method="post">-->
     <main class="page lanidng-page"></main>
     <section class="portfolio-block website gradient" style="background: url(&quot;./assets/img/gray.png&quot;);">
         <section>
@@ -15,10 +17,10 @@
                     <div class="form-group">
                         <div class="form-row">
                             <div class="col">
-                                <p><strong>Item ID</strong>&nbsp;<span class="text-danger">*</span></p><input class="form-control" type="ID" required="" name="">
+                                <p><strong>Prod ID</strong>&nbsp;<span class="text-danger">*</span></p><input class="form-control" type="ID" required="" name="">
                             </div>
                             <div class="col">
-                                <p><strong>Item Name</strong>&nbsp;<span class="text-danger">*</span></p><input class="form-control" type="name" required="" name="">
+                                <p><strong>Brand ID</strong>&nbsp;<span class="text-danger">*</span></p><input class="form-control" type="name" required="" name="">
                             </div>
                         </div>
                     </div>
@@ -31,9 +33,15 @@
                     <div class="form-group">
                         <p><strong>Expiration Date</strong><span class="text-danger">*</span></p><input class="form-control" type="ed" required="" name="">
                     </div>
+		    <div class="form-group">
+                        <p><strong>Brand Name</strong><span class="text-danger">*</span></p><input class="form-control" type="ed" required="" name="">
+                    </div>
+                    <div class="form-group">
+                        <p><strong>Produce Type</strong><span class="text-danger">*</span></p><input class="form-control" type="ed" required="" name="">
+                    </div>
 
                 <br>
-                <span class="submit"><a class="submit" role="button" href="#" style="background: #ffc629;color: rgb(0,0,0);padding: 8px 20px;">ADD</a></span>
+		<input type="submit" value="submit" style="background: #ffc629;color: rgb(0,0,0);padding: 8px 20px;">
                 <br>
 <br>
                 </form>
@@ -46,7 +54,6 @@
     <script src="./assets/js/Application-Form.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
     <script src="./assets/js/theme.js"></script>
-
 </body>
 
 </html>
