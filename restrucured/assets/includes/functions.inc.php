@@ -33,9 +33,9 @@ function badSyntaxLname($lname) {
 function invalidEmail($email) {
 	$result;
 	if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-		$result = true;
-	} else {
 		$result = false;
+	} else {
+		$result = true;
 	}
 	return $result;
 }
