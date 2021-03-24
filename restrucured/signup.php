@@ -17,10 +17,10 @@ session_start();
                     <div class="form-group">
                         <div class="form-row">
                             <div class="col">
-                                <p><strong>First Name</strong>&nbsp;<span class="text-danger">*</span></p><input class="form-control" type="text" required="" name="fname">
+                                <p><strong>First Name</strong>&nbsp;<span class="text-danger">*</span></p><input class="form-control" type="text" name="fname">
                             </div>
                             <div class="col">
-                                <p><strong>Last Name</strong>&nbsp;<span class="text-danger">*</span></p><input class="form-control" type="text" required="" name="lname">
+                                <p><strong>Last Name</strong>&nbsp;<span class="text-danger">*</span></p><input class="form-control" type="text" name="lname">
                             </div>
                         </div>
                     </div>
@@ -28,14 +28,14 @@ session_start();
                         <p><strong>Email&nbsp;</strong><span class="text-danger">*</span></p><input class="form-control" type="email" name="email" placeholder="rowdy@csub.edu">
                     </div>
                     <div class="form-group">
-                        <p><strong>Password&nbsp;</strong><span class="text-danger">*</span></p><input class="form-control" type="password" required="" name="passwd">
+                        <p><strong>Password&nbsp;</strong><span class="text-danger">*</span></p><input class="form-control" type="password" name="passwd">
                     </div>
                     <div class="form-group">
-                        <p><strong>Verify Password&nbsp;</strong><span class="text-danger">*</span></p><input class="form-control" type="password" required="" name="passwdRepeat">
+                        <p><strong>Verify Password&nbsp;</strong><span class="text-danger">*</span></p><input class="form-control" type="password" name="passwdRepeat">
                     </div>
 
                 <br>
-                <span class="submit"><a class="submit" role="button" name="signupUserSubmit" href="#" style="background: #ffc629;color: rgb(0,0,0);padding: 8px 20px;">Sign me up!</a></span>
+                <span class="submit"><a class="submit" role="button" name="signupUserSubmit" href="homepage.php" style="background: #ffc629;color: rgb(0,0,0);padding: 8px 20px;">Sign me up!</a></span>
                 <br>
               <br>
                 </form>
