@@ -96,7 +96,7 @@ function signupUser($connection, $fname, $lname, $email, $passwd) {
 
 function loginEmpty($email, $passwd) {
 	$result;
-	if (empty($email), empty($passwd)) {
+	if (empty($email) || empty($passwd)) {
 		$result = true;
 	} else {
 		$result = false;
