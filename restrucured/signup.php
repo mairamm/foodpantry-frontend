@@ -27,10 +27,10 @@ session_start();
                         <p><strong>Email&nbsp;</strong><span class="text-danger">*</span></p><input class="form-control" type="email" name="email" placeholder="rowdy@csub.edu">
                     </div>
                     <div class="form-group">
-                        <p><strong>Password&nbsp;</strong><span class="text-danger">*</span></p><input class="form-control" type="text" required="" name="passwd">
+                        <p><strong>Password&nbsp;</strong><span class="text-danger">*</span></p><input class="form-control" type="password" required="" name="passwd">
                     </div>
                     <div class="form-group">
-                        <p><strong>Verify Password&nbsp;</strong><span class="text-danger">*</span></p><input class="form-control" type="text" required="" name="passwdRepeat">
+                        <p><strong>Verify Password&nbsp;</strong><span class="text-danger">*</span></p><input class="form-control" type="password" required="" name="passwdRepeat">
                     </div>
 
                 <br>
