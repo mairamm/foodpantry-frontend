@@ -1,6 +1,6 @@
 <?php
 
-function signupEmpty($fname, $lname, $email, $passwd, $passwdRepeat) == true) {
+function signupEmpty($fname, $lname, $email, $passwd, $passwdRepeat) {
 	$result;
 	if (empty($fname), empty($lname), empty($email), empty($passwd), empty($passwdRepeat)) {
 		$result == true;
@@ -30,7 +30,7 @@ function badSyntaxLname($lname) {
 	return $result;
 }
 
-function invalidEmail($email) == true) {
+function invalidEmail($email) {
 	$result;
 	if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
 		$result = true;
