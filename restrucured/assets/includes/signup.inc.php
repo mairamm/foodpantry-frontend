@@ -5,7 +5,7 @@
 # This page also include db connctions include page & functions include page
 
 # Checking if a submit post request is initiated
-if (isset($_POST["submit"])) {
+if (isset($_POST["signupUserSubmit"])) {
   $fname = $_POST["fname"];
   $lname = $_POST["lname"];
   $email = $_POST["email"];
@@ -20,37 +20,37 @@ if (isset($_POST["submit"])) {
   # ERROR HANDLERS
   #If the form is empty
   if (signupEmpty($fname, $lname, $email, $passwd, $passwdRepeat) == true ) {
-    header("location: ../signup.php?error=emptyform");
+    header("location: ../../signup.php?error=emptyform");
     exit();
   }
 
   #If the fname sysntax is wrong. Sanitize using regular experssions
   if (badSyntaxFname($fname) == true ) {
-    header("location: ../signup.php?error=badsyntaxfname");
+    header("location: ../../signup.php?error=badsyntaxfname");
     exit();
   }
 
   #If the fname sysntax is wrong. Sanitize using regular experssions
   if (badSyntaxLname($lname) == true ) {
-    header("location: ../signup.php?error=badsyntaxlname");
+    header("location: ../../signup.php?error=badsyntaxlname");
     exit();
   }
 
   #If email is not in the right format
   if (invalidEmail($email) == true ) {
-    header("location: ../signup.php?error=invalidemail");
+    header("location: ../../signup.php?error=invalidemail");
     exit();
   }
 
   #If the passwords dont match
   if (passwdMatching($passwd, $passwdRepeat) == true ) {
-    header("location: ../signup.php?error=passwordsdontmatch");
+    header("location: ../../signup.php?error=passwordsdontmatch");
     exit();
   }
 
   #If you the email is taken by another user.
   if (emailTaken($connection, $email) == true ) {
-    header("location: ../signup.php?error=emailalreadyexists");
+    header("location: ../../signup.php?error=emailalreadyexists");
     exit();
   }
 
@@ -58,6 +58,5 @@ if (isset($_POST["submit"])) {
  signupUser($connection, $fname, $lname, $email, $passwd);
 
 } else {
-  header("location: ../signup.php");
+  header("location: ../../signup.php");
 }
-
