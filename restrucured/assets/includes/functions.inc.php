@@ -2,7 +2,7 @@
 
 function signupEmpty($fname, $lname, $email, $passwd, $passwdRepeat) {
 	$result;
-	if (empty($fname), empty($lname), empty($email), empty($passwd), empty($passwdRepeat)) {
+	if (empty($fname) || empty($lname) || empty($email) || empty($passwd) || empty($passwdRepeat)) {
 		$result == true;
 	} else {
 		$result == false;
