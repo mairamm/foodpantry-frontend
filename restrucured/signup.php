@@ -35,7 +35,7 @@ session_start();
                     </div>
 
                 <br>
-                <span class="submit"><a class="submit" role="button" name="signupUserSubmit" href="homepage.php" style="background: #ffc629;color: rgb(0,0,0);padding: 8px 20px;">Sign me up!</a></span>
+                <span class="submit"><a class="submit" role="button" name="signupUserSubmit" style="background: #ffc629;color: rgb(0,0,0);padding: 8px 20px;">Sign me up!</a></span>
                 <br>
               <br>
                 </form>
