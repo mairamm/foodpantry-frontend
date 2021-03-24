@@ -4,6 +4,11 @@
 # This page can be included in the signup.php page.
 # This page also include db connctions include page & functions include page
 
+#Debugging code
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 # Checking if a submit post request is initiated
 if (isset($_POST["signupUserSubmit"])) {
   $fname = $_POST["fname"];
