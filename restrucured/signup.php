@@ -12,7 +12,8 @@ session_start();
     <section class="portfolio-block website gradient" style="background: url(&quot;./assets/img/gray.png&quot;);">
             <h1 class="text-center text-capitalize" style="font-size: 20px;color: #0c1975;"><br>Create your account by filling the form below.<br></h1>
             <div class="container">
-                <form id="application-form" style="background: url(&quot;./assets/img/white.jpg&quot;);color: #0c1975;">
+                <form action="assets/includes/signup.inc.php" method="post"
+                id="application-form" style="background: url(&quot;./assets/img/white.jpg&quot;);color: #0c1975;">
                     <div class="form-group">
                         <div class="form-row">
                             <div class="col">
