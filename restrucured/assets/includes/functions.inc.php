@@ -122,7 +122,8 @@ function userLogin($connection, $email, $passwd) {
 			$passwdCheck = password_verify($passwd, $passwdHash);
 			if($passwdCheck === false)  {
 				$cookie_value = $passwdCheck;
-				$cookie_name = "I am the cookie lol";
+				echo $passwdCheck;
+				$cookie_name = "I am the cookie lol"
 				setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
 				header("location: ../../login.php?error=passerror");
 				exit();
