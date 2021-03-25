@@ -120,14 +120,10 @@ function userLogin($connection, $email, $passwd) {
 		if ($row = mysqli_fetch_assoc($result)) {
 			$passwdHash = $row["passwd"];
 			$passwdCheck = password_verify($passwd, $passwdHash);
-			if($passwdCheck === false)  {
-				$cookie_value = $passwdCheck;
-				echo $passwdCheck;
-				$cookie_name = "I am the cookie lol"
-				setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
+			if($passwdCheck == false)  {
 				header("location: ../../login.php?error=passerror");
 				exit();
-			} elseif($passwdCheck === true) {
+			} elseif($passwdCheck == true) {
 				session_start();
 				$_SESSION['elogsess'] = $row['email'];
 				$_SESSION['fnamesess'] = $row['email'];
