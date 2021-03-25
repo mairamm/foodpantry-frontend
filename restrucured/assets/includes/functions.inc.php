@@ -120,7 +120,7 @@ function userLogin($connection, $email, $passwd) {
 		if ($row = mysqli_fetch_assoc($result)) {
 			$passwdCheck = password_verify($passwd, $row['passwd']);
 			if($passwdCheck == false)  {
-				header("location: ../../login.php?error=sqlerror");
+				header("location: ../../login.php?error=passerror");
 				exit();
 			} elseif($passwdCheck == true) {
 				session_start();
