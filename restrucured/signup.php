@@ -3,6 +3,7 @@ session_start();
 #if (!isset($_SESSION['QRcode'])) {
 #  echo '<h1>ERROR 404 PAGE NOT FOUND</h1>';
 #} else {}
+    echo '<title>Signup - Foodpantry</title>';
     include('skel/header.php');
     include('skel/navbarReg.php');
 #====================================BODY=======================================
@@ -63,14 +64,6 @@ session_start();
                   }
                  ?>
     </section>
-    <script src="./assets/js/jquery.min.js"></script>
-    <script src="./assets/js/bootstrap.min.js"></script>
-    <script src="./assets/js/Application-Form-1.js"></script>
-    <script src="./assets/js/Application-Form.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
-    <script src="./assets/js/theme.js"></script>
-
-</body>
 
 <?php
 #=================================END-BODY======================================
