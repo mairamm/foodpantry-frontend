@@ -51,25 +51,26 @@ function passwdMatching($passwd, $passwdRepeat) {
 }
 
 function emailTaken($connection, $email) {
-	$sql = "SELECT * FROM individual WHERE email = ?;";
+	$result;
+	$sql = "SELECT * FROM individual WHERE `email` = \"?\";";
 	$stmt = mysqli_stmt_init($connection);
 	if (!mysqli_stmt_prepare($stmt, $sql)) {
 		header("location: ../../signup.php?error=statementfailed");
 		exit();
-	}
+	} else {
 
 	mysqli_stmt_bind_param($stmt, "s", $email);
 	mysqli_stmt_execute($stmt);
 
 	$resultData = mysqli_stmt_get_result($stmt);
-	$result;
+
 	if ($row = mysqli_fetch_assoc($resultData)) {
 		return $row;
 	} else {
 		$result = false;
+		return $result;
+		}
 	}
-	return $result;
-
 	mysqli_stmt_close($stmt);
 }
 
@@ -77,10 +78,10 @@ function emailTaken($connection, $email) {
 function signupUser($connection, $fname, $lname, $email, $passwd) {
 	$sql = "INSERT INTO individual (fname, lname, email, passwd) VALUES(?, ?, ?, ?);";
 	$stmt = mysqli_stmt_init($connection);
-	#if (!mysqli_stmt_init($connection) {
-	#	header("location: ../../signup.php?error=statementfailed");
-	#	exit();
-	#}
+	if (!mysqli_stmt_init($connection, $sql) {
+		header("location: ../../signup.php?error=statementfailed");
+		exit();
+	} else {
 
 	$hashedPasswd = password_hash($passwd, PASSWORD_DEFAULT);
 
@@ -89,6 +90,7 @@ function signupUser($connection, $fname, $lname, $email, $passwd) {
 	mysqli_stmt_close($stmt);
 	header("location: ../../signup.php?error=success");
 	exit();
+	}
 }
 
 
