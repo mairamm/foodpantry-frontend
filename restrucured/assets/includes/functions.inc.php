@@ -108,24 +108,29 @@ function loginEmpty($email, $passwd) {
 
 
 function userLogin($connection, $email, $passwd) {
-	$emailTaken = emailTaken($connection, $email, $passwd);
-
-	if ($emailTaken == false) {
-		header("location: ../../login.php?error=badlogin");
+	$sql ="SELECT * FROM individual WHERE email=?;";
+	$stmt = mysqli_stmt_init($connection);
+	if(!mysqli_stmt_prepare($stmt, $sql)) {
+		header("location: ../../login.php?error=sqlerror");
 		exit();
-	}
-
-	$hashedPasswd = $emailTaken["passwd"];
-	$checkPwd = password_verify($passwd, $hashedPasswd);
-
-	if ($checkPwd == false) {
-		header("location: ../../login.php?error=badlogin");
-		exit();
-	} else if ($checkPwd == true) {
-		session_start();
-		$_SESSION["email"] = $emailTaken["email"];
-		$_SESSION["QRcode"] = $emailTaken["QRcode"];
-		header("location: ../../index.php");
-		exit();
+	} else {
+		mysqli_stmt_bind_param($stmt, "s", $email);
+		mysqli_stmt_execute($stmt);
+		$result = mysqli_stmt_get_result($stmt);
+		if ($row = mysqli_fetch_assoc($result)) {
+			$passwdCheck = password_verify($passwd, $row['passwd']);
+			if($passwdCheck == false)  {
+				header("location: ../../login.php?error=sqlerror");
+				exit();
+			} elseif($passwdCheck == true) {
+				session_start();
+				$_SESSION['email'] = $row['email'];
+				header("location: ../../homepage.php?error=success");
+				exit();
+			}
+		} else {
+			header("location: ../../login.php?error=nouser");
+			exit();
+		}
 	}
 }
