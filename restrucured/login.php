@@ -27,6 +27,12 @@ echo '<title>Login - Foodpantry</title>';
                 <button class="btn btn-primary btn-block" type="submit" name="loginUserSubmit">Log in</button>
                 <br><br>
                 </form>
+                <?php
+                      echo '<p>DEBUGING OUTPUT:</p>';
+                      session_start();
+                      echo $_SESSION['debugPasswd'];
+                      unset($_SESSION['debugPasswd']);
+                ?>
 
             </div>
         </section>
