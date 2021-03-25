@@ -78,7 +78,7 @@ function emailTaken($connection, $email) {
 function signupUser($connection, $fname, $lname, $email, $passwd) {
 	$sql = "INSERT INTO individual (fname, lname, email, passwd) VALUES(?, ?, ?, ?);";
 	$stmt = mysqli_stmt_init($connection);
-	if (!mysqli_stmt_init($connection, $sql) {
+	if (!mysqli_stmt_init($connection, $sql)) {
 		header("location: ../../signup.php?error=statementfailed");
 		exit();
 	} else {
