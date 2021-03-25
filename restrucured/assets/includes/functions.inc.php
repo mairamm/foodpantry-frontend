@@ -52,7 +52,7 @@ function passwdMatching($passwd, $passwdRepeat) {
 
 function emailTaken($connection, $email) {
 	$result;
-	$sql = "SELECT * FROM individual WHERE `email` = \"?\";";
+	$sql = "SELECT * FROM individual WHERE `email` = ?;";
 	$stmt = mysqli_stmt_init($connection);
 	if (!mysqli_stmt_prepare($stmt, $sql)) {
 		header("location: ../../signup.php?error=statementfailed");
