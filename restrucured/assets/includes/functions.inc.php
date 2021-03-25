@@ -121,7 +121,7 @@ function userLogin($connection, $email, $passwd) {
 			$passwdHash = $row["passwd"];
 			$passwdCheck = password_verify($passwd, $passwdHash);
 			if($passwdCheck === false)  {
-				header("location: ../../login.php?error=passerror");
+				header("location: ../../login.php?error=passerror".$passwdCheck);
 				exit();
 			} elseif($passwdCheck === true) {
 				session_start();
