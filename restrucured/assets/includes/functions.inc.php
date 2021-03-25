@@ -118,13 +118,16 @@ function userLogin($connection, $email, $passwd) {
 		mysqli_stmt_execute($stmt);
 		$result = mysqli_stmt_get_result($stmt);
 		if ($row = mysqli_fetch_assoc($result)) {
-			$passwdCheck = password_verify($passwd, $row['passwd']);
-			if($passwdCheck == false)  {
+			$passwdHash = $row["passwd"];
+			$passwdCheck = password_verify($passwd, $passwdHash);
+			if($passwdCheck === false)  {
 				header("location: ../../login.php?error=passerror");
 				exit();
-			} elseif($passwdCheck == true) {
+			} elseif($passwdCheck === true) {
 				session_start();
-				$_SESSION['email'] = $row['email'];
+				$_SESSION['elogsess'] = $row['email'];
+				$_SESSION['fnamesess'] = $row['email'];
+				$_SESSION['lnamesess'] = $row['email'];
 				header("location: ../../homepage.php?error=success");
 				exit();
 			}
