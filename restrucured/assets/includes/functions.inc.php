@@ -55,7 +55,7 @@ function emailTaken($connection, $email) {
 	$sql = "SELECT * FROM individual WHERE `email` = ?;";
 	$stmt = mysqli_stmt_init($connection);
 	if (!mysqli_stmt_prepare($stmt, $sql)) {
-		header("location: ../../signup.php?error=statementfailed");
+		header("location: ../../signup.php?error=statementfailedemailtaken");
 		exit();
 	} else {
 
@@ -79,7 +79,7 @@ function signupUser($connection, $fname, $lname, $email, $passwd) {
 	$sql = "INSERT INTO individual (fname, lname, email, passwd) VALUES(?, ?, ?, ?);";
 	$stmt = mysqli_stmt_init($connection);
 	if (!mysqli_stmt_init($connection, $sql)) {
-		header("location: ../../signup.php?error=statementfailed");
+		header("location: ../../signup.php?error=statementfailedsignupuser");
 		exit();
 	} else {
 
