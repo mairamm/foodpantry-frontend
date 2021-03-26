@@ -118,7 +118,8 @@ function userLogin($connection, $email, $passwd) {
 		mysqli_stmt_execute($stmt);
 		$result = mysqli_stmt_get_result($stmt);
 		if ($row = mysqli_fetch_assoc($result)) {
-			$passwdHash = $row['passwd'];
+			$dbPass = $row['passwd'];
+			$passwdHash = password_hash($dbPass, PASSWORD_DEFAULT);
 			$passwdCheck = password_verify($passwd, $passwdHash);
 			if($passwdCheck == false)  {
 				header("location: ../../login.php?error=passerror");
