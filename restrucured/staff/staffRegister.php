@@ -10,20 +10,23 @@ error_reporting(E_ALL);
 <script src="../assets/js/randStringGenerator.js"></script>
 
 <body>
-  <!--<input type="text" id="qrdata" oncharge="generateQR()">-->
   <div id="qrcode"></div>
 </body>
 
 <?php
   if(isset($_POST['QRCodeGenButton'])) {
-    ?>
 
-  <script type="text/javascript">
-    window.onload = function() {
-      var rand = generateRandString(8).toString();
-      outputQRCodetoID("qrcode",rand);
-    };
-  </script>
+    include('../assets/includes/dbh.inc.php');
+    ?>
+    <script type="text/javascript">
+      window.onload = function() {
+        var rand = generateRandString(8).toString();
+
+
+
+        outputQRCodetoID("qrcode",rand);
+      };
+    </script>
 
     <?php
     ;
