@@ -8,6 +8,7 @@
 ?>
 
 <body>
+<form action="../queries/update_inv.php" method="post">
     <main class="page lanidng-page"></main>
     <section class="portfolio-block website gradient" style="background: url(&quot;./assets/img/gray.png&quot;);">
         <section>
@@ -16,25 +17,25 @@
                     <div class="form-group">
                         <div class="form-row">
                             <div class="col">
-                                <p><strong>Item ID</strong>&nbsp;<span class="text-danger">*</span></p><input class="form-control" type="ID" required="" name="">
+                                <p><strong>Item ID</strong><input class="form-control" type="ID" name="prod-id" id="prodid"></p>
                             </div>
                             <div class="col">
-                                <p><strong>Item Name</strong>&nbsp;<span class="text-danger">*</span></p><input class="form-control" type="name" required="" name="">
+                                <p><strong>Item Name</strong><input class="form-control" type="itemname" name="brand-name" id="bname"></p>
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
-                        <p><strong>Quantity</strong><span class="text-danger">*</span></p><input class="form-control" type="quantity" name="" placeholder="">
+                        <p><strong>Quantity</strong><input class="form-control" type="quanti" name="quantity" id="quant"></p>
                     </div>
                     <div class="form-group">
-                        <p><strong>Points Cost</strong><span class="text-danger">*</span></p><input class="form-control" type="pc" required="" name="">
+                        <p><strong>Points Cost</strong><input class="form-control" type="pc" name="point-cost" id="pointc"></p>
                     </div>
                     <div class="form-group">
-                        <p><strong>Expiration Date</strong><span class="text-danger">*</span></p><input class="form-control" type="ed" required="" name="">
+                        <p><strong>Expiration Date</strong><input class="form-control" type="ed" name="expiration-date" id="expire"></p>
                     </div>
 
                 <br>
-                <span class="submit"><a class="submit" role="button" href="#" style="background: #ffc629;color: rgb(0,0,0);padding: 8px 20px;">UPDATE</a></span>
+                <input type="submit" value="submit"  style="background: #ffc629;color: rgb(0,0,0);padding: 8px 20px;">                
                 <br>
 <br>
                 </form>
