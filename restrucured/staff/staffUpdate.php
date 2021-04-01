@@ -2,9 +2,9 @@
 <html>
 
 <?php
-    //include('queries/update_inv.php');
-    include('skel/header.php');
-    include('skel/navbarUpdate.php');
+    //include('../queries/update_inv.php');
+    include('../skel/header.php');
+    include('../skel/navbarUpdate.php');
 ?>
 
 <body>
