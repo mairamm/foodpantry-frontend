@@ -2,13 +2,13 @@
 <html>
 
 <?php
-    include('skel/header.php');
-    include('skel/navbarAdd.php');
-    include('queries/add_item.php');
+    include('../skel/header.php');
+    include('../skel/navbarAdd.php');
+    //include('queries/add_item.php');
 ?>
 
 <body>
-<!--<form action="queries/add_item.php" method="post">-->
+<form action="../queries/add_item.php" method="post">
     <main class="page lanidng-page"></main>
     <section class="portfolio-block website gradient" style="background: url(&quot;./assets/img/gray.png&quot;);">
         <section>
@@ -17,27 +17,27 @@
                     <div class="form-group">
                         <div class="form-row">
                             <div class="col">
-                                <p><strong>Prod ID</strong>&nbsp;<span class="text-danger">*</span></p><input class="form-control" type="ID" required="" name="">
+                            <p><strong>Product ID</strong><input class="form-control" type="text" name="prod-id" id="prodid"></p>
                             </div>
                             <div class="col">
-                                <p><strong>Brand ID</strong>&nbsp;<span class="text-danger">*</span></p><input class="form-control" type="name" required="" name="">
+                            <p><strong>Brand ID</strong><input class="form-control" type="text" name="brand-id" id="brandid"></p>
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
-                        <p><strong>Quantity</strong><span class="text-danger">*</span></p><input class="form-control" type="quantity" name="" placeholder="">
+                    <p><strong>Quantity</strong><input class="form-control" type="text" name="quantity" id="quant"></p>
                     </div>
                     <div class="form-group">
-                        <p><strong>Points Cost</strong><span class="text-danger">*</span></p><input class="form-control" type="pc" required="" name="">
+                    <p><strong>Point cost</strong><input class="form-control" type="text" name="point-cost" id="cost"></p>
                     </div>
                     <div class="form-group">
-                        <p><strong>Expiration Date</strong><span class="text-danger">*</span></p><input class="form-control" type="ed" required="" name="">
+                    <p><strong>Expiration date</strong><input class="form-control" type="text" name="expiration-date" id="expire"></p>
                     </div>
 		    <div class="form-group">
-                        <p><strong>Brand Name</strong><span class="text-danger">*</span></p><input class="form-control" type="ed" required="" name="">
+                    <p><strong>Brand name</strong><input class="form-control" type="text" name="brand-name" id="brandname"></p>
                     </div>
                     <div class="form-group">
-                        <p><strong>Produce Type</strong><span class="text-danger">*</span></p><input class="form-control" type="ed" required="" name="">
+                    <p><strong>Produce type</strong><input class="form-control" type="text" name="produce-type" id="prodtype"></p>
                     </div>
 
                 <br>
