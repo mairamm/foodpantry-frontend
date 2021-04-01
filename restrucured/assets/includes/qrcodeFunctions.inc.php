@@ -1,6 +1,21 @@
 <?php
 function qrCodeIDIsUnique($qrcodeid) {
-	$isUnique = 0;
+	include('dbh.inc.php');
+	$isUnique = 1;
+
+	$sql = "SELECT QRcode FROM individual";
+	$result = mysqli_query($connection, $sql);
+
+	if (mysqli_num_rows($result) > 0) {
+		while ($row = mysqli_fetch_assoc($result)) {
+			//echo "qrid: " . $row["QRcode"];
+			if ($qrcodeid == $row["QRcode"]) {
+				$isUnique = 0;
+			}
+		}
+	} else {
+		echo "Nothing found!";
+	}
 
 	return $isUnique;
 }
@@ -20,4 +35,5 @@ function generateRandString() {
 
 	return $stringGenerated;
 }
+
 ?>

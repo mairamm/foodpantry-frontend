@@ -29,7 +29,7 @@ if($result = mysqli_query($conn, $query))
 
 
 
-	while($row = mysqli_fetch_assoc($result)) 
+	while($row = mysqli_fetch_assoc($result))
 	{
 	    echo "<tr>";
 	    foreach($row as $key => $field)

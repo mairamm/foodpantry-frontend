@@ -15,41 +15,25 @@ error_reporting(E_ALL);
 
 <?php
   if(isset($_POST['QRCodeGenButton'])) {
-
-    // connect to db
-    //include('../assets/includes/dbh.inc.php');
-
-    // -local connection for testing-
-    $serverName = "localhost";
-    $dbUsername = "alopez";
-    $dbPasswd = "qWECGWGYh?fPByLxe@a";
-    $dbName = "foodpantry";
-    $conn = new mysqli($serverName, $dbUsername, $dbPasswd, $dbName);
-    // Check connection
-    if ($conn->connect_error) {
-      die("Connection failed: " . $conn->connect_error);
-    }
-    echo "Connected successfully";
-
+    // include qrcode functions
     include('../assets/includes/qrcodeFunctions.inc.php');
-    echo generateRandString();
 
-    $conn->close();
-    //
+    // generate random string
+    $qrcodeid = generateRandString();
+    // check if string generated is unique for QRcode ID
+    if (qrCodeIDIsUnique($qrcodeid)) {
+      // if it is, output the QRCode to the screen
+      ?>
+      <script type="text/javascript">
+        window.onload = function() {
+          qrcodeid = "<?php echo $qrcodeid; ?>";
+          outputQRCodetoID("qrcode",qrcodeid);
+        };
+      </script>
+      <?php
+    }
 
-    ?>
-    <script type="text/javascript">
 
-
-      window.onload = function() {
-        var rand = generateRandString(8).toString();
-
-
-        outputQRCodetoID("qrcode",rand);
-      };
-    </script>
-
-    <?php
     ;
   }
 ?>
