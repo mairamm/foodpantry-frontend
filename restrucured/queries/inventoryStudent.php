@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 
 $query = "SELECT b.brand-name, b.produce-type, i.quantity, i.point-cost,i.expiration-date FROM brand-type AS b INNER JOIN inventory AS i ON i.brand-id = b.brand-id;";
 
-if($result = mysqli_query($conn, $query))
+if($result = mysqli_query($connection, $query))
 {
     if(mysqli_num_rows($result) > 0)
     {
@@ -44,7 +44,7 @@ if($result = mysqli_query($conn, $query))
     }
 }
 else {
-    echo "Error: could not be able to execute $query. " . mysqli_error($conn);
+    echo "Error: could not be able to execute $query. " . mysqli_error($connection);
 }
-mysqli_close($conn);
+mysqli_close($connection);
 ?>

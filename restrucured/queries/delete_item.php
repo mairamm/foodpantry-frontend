@@ -8,20 +8,20 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-$prodid = mysqli_real_escape_string($conn, $_POST[`prod-id`]);
+$prodid = mysqli_real_escape_string($connection, $_POST[`prod-id`]);
 //$brandid = mysqli_real_escape_string($conn, $_POST['brand-id']);
 
 $sql1 = "DELETE FROM inventory WHERE `prod-id` LIKE '%" .$prodid . "'";
 //$sql2 = "DELETE FROM `brand-type` WHERE brand-id LIKE '%" . $brandid . "%'";
 
-if(mysqli_query($conn, $sql1))
+if(mysqli_query($connection, $sql1))
     {
             echo "Records deleted successfully.";
     } 
     else
     {
-        echo "ERROR: Could not delete $sql1. " . mysqli_error($conn);
+        echo "ERROR: Could not delete $sql1. " . mysqli_error($connection);
     }
     
-    mysqli_close($conn);
+    mysqli_close($connection);
     ?>
