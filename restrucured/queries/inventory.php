@@ -10,7 +10,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-$query = "SELECT i.`prod-id`, b.`brand-name`, b.`produce-type`, i.quantity, i.`point-cost`, i.`expiration-date` FROM `brand-type` AS b INNER JOIN inventory AS i ON i.`brand-id` = b.`brand-id`;";
+$query = "SELECT i.`prod-id`, b.`brand-name`, b.`produce-type`, i.quantity, i.`point-cost`, i.`expiration-date` FROM `brandType` AS b INNER JOIN inventory AS i ON i.`brand-id` = b.`brand-id`;";
 
 
 if($result = mysqli_query($connection, $query))
