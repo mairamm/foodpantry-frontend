@@ -1,5 +1,10 @@
 <?php
 include ('dbh.inc.php');
+
+//commented out temporarily due to pathing issue
+require_once ('./assets/includes/update_item.inc.php')
+
+//displays all errors or warnings
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
