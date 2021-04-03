@@ -1,8 +1,9 @@
 <?php
+
 //this include handles the connection to the database
+include ('../assets/includes/delete_item.inc.php');
 include ('dbh.inc.php');
-//$serverName = "localhost";
-//$dbUsername = "foodpantry";
+
 //the following 3 lines of code reports warnings and errors
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -13,6 +14,12 @@ error_reporting(E_ALL);
 
 //$sql1 = "DELETE FROM inventory WHERE `prod-id` LIKE '%" .$prodid . "'";
 //$sql2 = "DELETE FROM `brand-type` WHERE brand-id LIKE '%" . $brandid . "%'";
+
+if(prodidEmpty($prodid) == true) {
+    echo "Empty field";
+    
+    exit();
+}
 
 if(mysqli_query($connection, $sql1))
     {

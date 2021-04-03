@@ -8,12 +8,12 @@
 
 <body style="color: rgb(0,0,0);font-size: 17px;">
     <div>
-        <div class="alert alert-success" role="alert" style="background: #ffc629;margin: 0px 0px 1px;text-align: center;"><span style="text-align: center;color: rgb(0,0,0);font-size: 18px;font-family: 'Quattrocento Sans', sans-serif;"><i class="far fa-bell"></i><strong>Alerts: </strong><a class="link" href="#" style="color: rgb(0,0,0);font-family: 'Quattrocento Sans', sans-serif;"> Covid-19 | </a><a class="link" href="#" style="color: rgb(0,0,0);font-family: 'Quattrocento Sans', sans-serif;">Return to Campus|</a><a class="link" href="#" style="color: rgb(0,0,0);font-family: 'Quattrocento Sans', sans-serif;"> CARES Act</a></span></div>
+        <div class="alert alert-success" role="alert" style="background: #ffc629;margin: 0px 0px 1px;text-align: center;"><span style="text-align: center;color: rgb(0,0,0);font-size: 17px;font-family: 'Quattrocento Sans', sans-serif;"><i class="far fa-bell"></i><a class="link" href="https://www.csub.edu/alert" style="color: rgb(0,0,0);font-family: 'Quattrocento Sans', sans-serif;"><strong>Alerts: </strong><a class="link" href="https://www.csub.edu/covid-19" style="color: rgb(0,0,0);font-family: 'Quattrocento Sans', sans-serif;"> Covid-19 | </a><a class="link" href="https://www.csub.edu/returntocampus" style="color: rgb(0,0,0);font-family: 'Quattrocento Sans', sans-serif;">Return to Campus |</a><a class="link" href="https://www.csub.edu/cares" style="color: rgb(0,0,0);font-family: 'Quattrocento Sans', sans-serif;"> CARES Act</a></span></div>
     </div>
 
     <nav class="navbar navbar-lit navbar-expand-md navigation-clean-button" style="background: #0c1975;">
 
-        <div class="container"><a class="navbar-brand" href="#" style="color: rgb(255,255,255);font-size: 35px;font-style: normal;font-family: 'Roboto Slab', serif;">Food Pantry</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand" href="http://174.135.102.61/project/foodpantry-frontend/restrucured/homepage.php" style="color: rgb(255,255,255);font-size: 35px;font-style: normal;font-family: 'Roboto Slab', serif;">Food Pantry</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
 
             <div class="collapse navbar-collapse" id="navcol-1">
 
@@ -30,7 +30,7 @@
 
                 </ul>
             </div>
-    <span class="navbar-text actions"><a class="btn btn-primary" role="button" href="#" style="background: #ffc629;color: rgb(12, 25, 117);font-family: 'Roboto Slab', serif;float: right;">Login</a><a class="btn btn-primary" role="button" href="http://delphi.cs.csubak.edu/~foodpantry2/foodpantry-frontend/frontEnd/register/" style="background: #ffc629;color: rgb(12, 25, 117);font-family: 'Roboto Slab', serif;float: right;">Sign Up</a></span>
+    <span class="navbar-text actions"><a class="btn btn-primary" role="button" href="http://174.135.102.61/project/foodpantry-frontend/restrucured/login.php" style="background: #ffc629;color: rgb(12, 25, 117);font-family: 'Roboto Slab', serif;float: right;">Login</a><a class="btn btn-primary" role="button" href="http://174.135.102.61/project/foodpantry-frontend/restrucured/signup.php" style="background: #ffc629;color: rgb(12, 25, 117);font-family: 'Roboto Slab', serif;float: right;">Sign Up</a></span>
         </div>
     </nav>
 </body>

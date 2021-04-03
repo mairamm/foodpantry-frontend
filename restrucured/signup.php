@@ -5,7 +5,7 @@ session_start();
 #} else {}
     echo '<title>Signup - Foodpantry</title>';
     include('skel/header.php');
-    include('skel/navbarReg.php');
+    include('skel/navbarHome.php');
 #====================================BODY=======================================
 ?>
 <body>
@@ -36,7 +36,6 @@ session_start();
                     </div>
 
                 <br>
-                <span class="submit"><a class="submit" role="button" name="signupUserSubmit" style="background: #ffc629;color: rgb(0,0,0);padding: 8px 20px;">Sign me up!</a></span>
                 <button class="btn btn-primary btn-block" type="submit" name="signupUserSubmit">Sign Up</button>
                 <br>
               <br>
