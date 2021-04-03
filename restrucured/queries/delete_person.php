@@ -1,6 +1,6 @@
 <?php
 //include will handle the connection to the database
-include './assets/includes/dbh.inc.php';
+include 'dbh.inc.php';
 
 //will display errors 
 ini_set('display_errors', 1);
