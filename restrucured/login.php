@@ -23,7 +23,6 @@ echo '<title>Login - Foodpantry</title>';
                         <p><strong>Password&nbsp;</strong><span class="text-danger">*</span></p><input class="form-control" type="password" required="" name="passwd">
                     </div>
                     <br>
-                <span class="submit"><a class="submit" role="button" href="#" style="background: #ffc629;color: rgb(0,0,0);padding: 8px 20px;">Log in</a></span>
                 <button class="btn btn-primary btn-block" type="submit" name="loginUserSubmit">Log in</button>
                 <br><br>
                 </form>
