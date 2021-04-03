@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="./assets/css/homePage/Lightbox-Gallery.css"/>
     <link rel="stylesheet" href="./assets/css/homePage/Navigation-with-Buttons.css"/>
     <link rel="stylesheet" href="./assets/css/homePage/Simple-Slider.css"/>
-    <link rel="stylesheet" href="./assets/css/homePage/Carousel.css"/>
     <link rel="stylesheet" href="./assets/css/homePage/Footer.css"/>
     <link rel="stylesheet" href="./assets/css/homePage/Nav-Bar.css"/>
     <link rel="stylesheet" href="./assets/css/homePage/Buttons.css"/>

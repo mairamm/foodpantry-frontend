@@ -5,10 +5,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
 <script src="./assets/js/theme.js"></script>
 </body>
-    <div class="footer-clean">
+    <div class="footer-clean" style="background: #1B0072;">
         <footer>
             <div class="container">
-                <div class="row justify-content-center" style="background: #0c1975;">
+                <div class="row justify-content-center">
                     <div class="col-sm-4 col-md-3 item">
                         <ul>
                             <li></li>
@@ -30,6 +30,7 @@
                     </div>
                     <div class="col-1 col-sm-4 col-md-3 offset-md-0 item">
                         <ul></ul><small style="color: rgb(255,255,255);"><br/>California State University, Bakersfield 9001 Stockdale Highway Bakersfield, CA 93311 (661)-654-CSUB<br/></small>
+                        <img class="img-fluid float-left" src="./assets/img/csubLogo.png" width="" height="" style="margin: 5px;padding: 5px;"/>
                     </div>
                 </div>
             </div>
