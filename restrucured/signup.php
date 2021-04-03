@@ -5,7 +5,7 @@ session_start();
 #} else {}
     echo '<title>Signup - Foodpantry</title>';
     include('skel/header.php');
-    include('skel/navbarReg.php');
+    include('skel/navbarHome.php');
 #====================================BODY=======================================
 ?>
 <body>

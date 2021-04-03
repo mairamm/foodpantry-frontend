@@ -3,7 +3,7 @@
 <?php
 echo '<title>Login - Foodpantry</title>';
     include('skel/header.php');
-    include('skel/navbarLogin.php');
+    include('skel/navbarHome.php');
 
 #====================================BODY=======================================
 ?>
