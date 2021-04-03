@@ -29,7 +29,7 @@ if($result = mysqli_query($connection, $query))
 		echo '<td>' . $field . '</td>';
 	    }
 	    echo "</tr>";
-	}:wq
+	}
 
 	echo "</tables>";
 
