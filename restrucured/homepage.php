@@ -24,6 +24,21 @@
 </section>
 
 
+<div class="container">
+    <div class="product-item">
+        <div class="d-flex product-item-title">
+            <div class="d-flex mr-auto bg-faded p-5 rounded">
+                <h2 class="section-heading mb-0"><span class="section-heading-lower">How does it work? </span>
+                <span class="section-heading-upper">Each visitor is allotted one visit per week and up to 16 points per visit</span>
+                <img src="./assets/img/points.jpg"/>
+                </h2>
+            <img class="img-fluid d-flex mx-auto product-item-img mb-3 mb-lg-0 rounded" src="./assets/img/stockedShelf.jpg" style="width: 500px;" />
+            </div>
+         </div>
+    </div>
+</div>
+
+<br><br><br>
 
 <?php
     include('skel/footer.php');
