@@ -8,8 +8,5 @@
     error_reporting(E_ALL);
 
     include('queries/inventory.php');
+    include('queries/accounts.php');
 ?>
-
-
-<br>
-<br>

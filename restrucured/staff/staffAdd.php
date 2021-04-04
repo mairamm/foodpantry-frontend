@@ -11,6 +11,7 @@ include('../skel/navbarAdd.php');
 <form action="../queries/add_item.php" method="post">
 <main class="page lanidng-page"></main>
 <section class="portfolio-block website gradient" style="background: url(&quot;./assets/img/gray.png&quot;);">
+
 <section>
 <div class="container">
 <form id="application-form" style="background: url(&quot;./assets/img/white.jpg&quot;);color: #0c1975;">
@@ -30,8 +31,11 @@ include('../skel/navbarAdd.php');
 <br>
 <br>
 </div>
+</div>
+</div>
 </section>
 </section>
+
 <script src="./assets/js/jquery.min.js"></script>
 <script src="./assets/js/bootstrap.min.js"></script>
 <script src="./assets/js/Application-Form-1.js"></script>

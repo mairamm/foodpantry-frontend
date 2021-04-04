@@ -5,10 +5,11 @@ session_start();
 #} else {}
     echo '<title>Signup - Foodpantry</title>';
     include('skel/header.php');
-    include('skel/navbarHome.php');
+    include('skel/navbarSignup.php');
 #====================================BODY=======================================
 ?>
 <body>
+<form action="" method="post">
     <main class="page lanidng-page"></main>
     <section class="portfolio-block website gradient" style="background: url(&quot;./assets/img/gray.png&quot;);">
             <h1 class="text-center text-capitalize" style="font-size: 20px;color: #0c1975;"><br>Create your account by filling the form below.<br></h1>
@@ -18,21 +19,21 @@ session_start();
                     <div class="form-group">
                         <div class="form-row">
                             <div class="col">
-                                <p><strong>First Name</strong>&nbsp;<span class="text-danger">*</span></p><input class="form-control" type="text" name="fname">
+                                <p><label for="first-name"><strong>First Name</strong></label>&nbsp;<span class="text-danger">*</span><input class="form-control" type="text" name="fname" id="fn"></p>
                             </div>
                             <div class="col">
-                                <p><strong>Last Name</strong>&nbsp;<span class="text-danger">*</span></p><input class="form-control" type="text" name="lname">
+                                <p><label for="last-name"><strong>Last Name</strong>&nbsp;</label><span class="text-danger">*</span><input class="form-control" type="text" name="lname" id="ln"></p>
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
-                        <p><strong>Email&nbsp;</strong><span class="text-danger">*</span></p><input class="form-control" type="email" name="email" placeholder="rowdy@csub.edu">
+                        <p><label for="email"><strong>Email&nbsp;</strong></label><span class="text-danger">*</span><input class="form-control" type="email" name="email" placeholder="rowdy@csub.edu" id="em"></p>
                     </div>
                     <div class="form-group">
-                        <p><strong>Password&nbsp;</strong><span class="text-danger">*</span></p><input class="form-control" type="password" name="passwd">
+                        <p><label for="password"><strong>Password&nbsp;</strong></label><span class="text-danger">*</span><input class="form-control" type="password" name="passwd" id="pswd"></p>
                     </div>
                     <div class="form-group">
-                        <p><strong>Verify Password&nbsp;</strong><span class="text-danger">*</span></p><input class="form-control" type="password" name="passwdRepeat">
+                        <p><label for="verify-password"><strong>Verify Password&nbsp;</strong></label><span class="text-danger">*</span><input class="form-control" type="password" name="passwdRepeat" id="vpswd"></p>
                     </div>
 
                 <br>
@@ -68,5 +69,7 @@ session_start();
 #=================================END-BODY======================================
     include('skel/footer.php');
 ?>
+</form>
+</body>
 
 </html>

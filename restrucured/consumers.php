@@ -1,18 +1,8 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-
 <?php
     include('skel/header.php');
     include('skel/navbarStudent.php');
+
+
+    include('queries/consumerInventory.php');
 ?>
-
-</head>
-
-
-<?php
-    include('skel/footer.php');
-?>
-
 </html>
