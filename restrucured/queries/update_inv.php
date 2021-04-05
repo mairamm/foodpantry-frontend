@@ -18,6 +18,8 @@ error_reporting(E_ALL);
  $brandname = mysqli_real_escape_string($connection, $_POST[`brand-name`]);
  $producetype = mysqli_real_escape_string($connection, $_POST[`produce-type`]);
  
+ 
+ 
  if(mysqli_query($connection, "CALL upinventory(". $prodid . "," . $brandid . ",'" . $quantity . "'," . $pointcost . "," . $brandname . "," . $producetype . ");")){
  echo "Inventory updated.";
 } else{
