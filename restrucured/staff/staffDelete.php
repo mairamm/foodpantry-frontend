@@ -2,8 +2,8 @@
 <html>
 
 <?php
-include('skel/header.php');
-include('skel/navbarDelete.php');
+include('../skel/header.php');
+include('../skel/navbarDelete.php');
 //include('queries/delete_item.php');
 ?>
 

@@ -11,8 +11,6 @@ if (isset($_POST["Submit"])) {
 //this include handles the connection to the database
 include ('deletefunc.inc.php');
 include ('dbh.inc.php');
-include('skel/header.php');
-include('skel/navbarDelete.php');
 
 if(emptyField($prodid) == true) {
     header("location: ../staff/staffDelete.php?error=EmptyID");
