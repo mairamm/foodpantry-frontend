@@ -15,7 +15,7 @@ function updateInventory($connection, $prodid, $quantity, $pointcost, $expiratio
     $sql = "UPDATE inventory SET quantity=?, `point-cost`=?,`expiration-date`=? WHERE `prod-id`=?;";
     $stmt = mysqli_stmt_init($connection);
     if(!mysqli_stmt_prepare($stmt, $sql)) {
-        header("location: ../staff/staffUpdate.php?error=failedtoupdate");
+        header("location: ../../../staff/inventoryC/update_item.php?error=failedtoupdate");
         echo "Update failed: (". $stmt->errno.") " .$stmt->error. "<br>";
         exit();
         } else {
@@ -23,7 +23,7 @@ function updateInventory($connection, $prodid, $quantity, $pointcost, $expiratio
         mysqli_stmt_bind_param($stmt, "ssss", $prodid, $quantity, $pointcost, $expirationdate);
         mysqli_stmt_execute($stmt);
         mysqli_stmt_close($stmt);
-        header("location: ../staff/staffUpdate.php?error=success");
+        header("location: ../../../staff/inventoryC/update_item.php?error=success");
         echo"Database updated!";
         exit();
         }
@@ -65,7 +65,7 @@ function deleteItem($connection, $prodid) {
         mysqli_stmt_bind_param($stmt, "s", $prodid);
         mysqli_stmt_execute($stmt);
         mysqli_stmt_close($stmt);
-        header("location: ../staff/staffDelete.php?error=success");
+        header("location: ../../../staff/inventoryC/delete_item.php?error=success");
         echo"Item Deleted!";
         exit();
         }

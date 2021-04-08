@@ -1,6 +1,6 @@
 <?php
 //include handles connection to the database
-include './assets/includes/dbh.inc.php';
+include '../../dbh.inc.php';
 
 //will display all errors and warnings
 ini_set('display_errors', 1);
@@ -15,8 +15,8 @@ $passwd = mysqli_real_escape_string($connection, $_POST['Password']);
 
 //this should allow values from the inventory to be updated
 if(mysqli_query($connection, "CALL upInventory(". $QRcode . "," . $fname . ",'" . $lname . "'," . $email . "," . $email . ",". ");")){
-	 
-	 
+
+
 	echo "Info updated.";
 } else{
     echo "ERROR: Could not update $sql. " . mysqli_error($connection);

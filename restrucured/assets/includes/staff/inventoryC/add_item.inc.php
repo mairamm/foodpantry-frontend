@@ -1,6 +1,6 @@
 <?php
 //include handles connection to database
-include ('dbh.inc.php');
+include ('../../dbh.inc.php');
 //displays errors and warnings
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);

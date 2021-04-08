@@ -7,6 +7,5 @@ session_unset();
 session_destroy();
 
 #index.php is a sample, to be changed once I work with front end team
-header("location: ../index.php");
+header("location: ../../../index.php");
 exit();
-

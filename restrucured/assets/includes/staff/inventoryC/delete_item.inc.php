@@ -13,11 +13,10 @@ include ('deletefunc.inc.php');
 include ('dbh.inc.php');
 
 if(emptyField($prodid) == true) {
-    header("location: ../staff/staffDelete.php?error=EmptyID");
+    header("location: ../../../../staff/delete_item.php?error=EmptyID");
     echo "Empty field";
     exit();
 }
 
 deleteItem($connection, $prodid);
 }
-

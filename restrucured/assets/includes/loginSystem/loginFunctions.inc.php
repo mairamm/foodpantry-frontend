@@ -55,7 +55,7 @@ function emailTaken($connection, $email) {
 	$sql = "SELECT * FROM individual WHERE `email` = ?;";
 	$stmt = mysqli_stmt_init($connection);
 	if (!mysqli_stmt_prepare($stmt, $sql)) {
-		header("location: ../../signup.php?error=statementfailedemailtaken");
+		header("location: ../../../signup.php?error=statementfailedemailtaken");
 		exit();
 	} else {
 
@@ -79,7 +79,7 @@ function signupUser($connection, $fname, $lname, $email, $passwd) {
 	$sql = "INSERT INTO individual (fname, lname, email, passwd) VALUES(?, ?, ?, ?);";
 	$stmt = mysqli_stmt_init($connection);
 	if (!mysqli_stmt_init($connection, $sql)) {
-		header("location: ../../signup.php?error=statementfailedsignupuser");
+		header("location: ../../../signup.php?error=statementfailedsignupuser");
 		exit();
 	} else {
 
@@ -88,7 +88,7 @@ function signupUser($connection, $fname, $lname, $email, $passwd) {
 	mysqli_stmt_bind_param($stmt, "ssss", $fname, $lname, $email, $hashedPasswd);
 	mysqli_stmt_execute($stmt);
 	mysqli_stmt_close($stmt);
-	header("location: ../../signup.php?error=success");
+	header("location: ../../../signup.php?error=success");
 	exit();
 	}
 }
@@ -111,7 +111,7 @@ function userLogin($connection, $email, $passwd) {
 	$sql ="SELECT * FROM individual WHERE email=?;";
 	$stmt = mysqli_stmt_init($connection);
 	if(!mysqli_stmt_prepare($stmt, $sql)) {
-		header("location: ../../login.php?error=sqlerror");
+		header("location: ../../../login.php?error=sqlerror");
 		exit();
 	} else {
 		mysqli_stmt_bind_param($stmt, "s", $email);
@@ -122,18 +122,18 @@ function userLogin($connection, $email, $passwd) {
 			$passwdHash = password_hash($dbPass, PASSWORD_DEFAULT);
 			$passwdCheck = password_verify($passwd, $passwdHash);
 			if($passwdCheck == false)  {
-				header("location: ../../login.php?error=passerror");
+				header("location: ../../../login.php?error=passerror");
 				exit();
 			} elseif($passwdCheck == true) {
 				session_start();
 				$_SESSION['elogsess'] = $row['email'];
 				$_SESSION['fnamesess'] = $row['email'];
 				$_SESSION['lnamesess'] = $row['email'];
-				header("location: ../../homepage.php?error=success");
+				header("location: ../../../homepage.php?error=success");
 				exit();
 			}
 		} else {
-			header("location: ../../login.php?error=nouser");
+			header("location: ../../../login.php?error=nouser");
 			exit();
 		}
 	}

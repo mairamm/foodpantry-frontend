@@ -1,6 +1,6 @@
 <?php
 function qrCodeIDIsUnique($qrcodeid) {
-	include('dbh.inc.php');
+	include('../dbh.inc.php');
 	$isUnique = 1;
 
 	$sql = "SELECT QRcode FROM individual";

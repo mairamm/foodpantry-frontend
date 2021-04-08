@@ -1,8 +1,8 @@
 <?php
 //include will handle the connection to the database
-include 'dbh.inc.php';
+include '../../dbh.inc.php';
 
-//will display errors 
+//will display errors
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -16,12 +16,11 @@ $sql2 = "DELETE FROM consumer WHERE QRcode LIKE '%" . $QRcode . "%'";
 if(mysqli_query($connection, $sql1) && mysqli_query($connection, $sql2))
     {
             echo "Records deleted successfully.";
-    } 
+    }
     else
     {
         echo "ERROR: Could not delete $sql. " . mysqli_error($connection);
     }
-    
+
     mysqli_close($connection);
     ?>
-

@@ -16,18 +16,18 @@ if (isset($_POST["loginUserSubmit"])) {
 
   # Including a connection to the databases
   # Including the functions page to the databases
-  require_once 'dbh.inc.php';
-  require_once 'functions.inc.php';
+  require_once '../dbh.inc.php';
+  require_once './loginFunctions.inc.php';
 
   # ERROR HANDLER
   if (loginEmpty($email, $passwd) == true ) {
-    header("location: ../../login.php?error=emptyform");
+    header("location: ../../../login.php?error=emptyform");
     exit();
   }
   # Checking if email exists and password matches
   userLogin($connection, $email, $passwd);
 
 } else {
-  header("location: ../../login.php");
+  header("location: ../../../login.php");
   exit();
 }

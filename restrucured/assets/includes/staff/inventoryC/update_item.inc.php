@@ -10,8 +10,8 @@ if (isset($_POST["Submit"])) {
     $pointcost = $_POST["point-cost"];
     $expirationdate = $_POST["expiration-date"];
 
-    require_once ('dbh.inc.php');
-    require_once ('staffFunctions.inc.php');
+    require_once ('../../dbh.inc.php');
+    require_once ('../staffFunctions.inc.php');
 
 
     updateInventory($connection, $prodid, $quantity, $pointcost, $expirationdate);

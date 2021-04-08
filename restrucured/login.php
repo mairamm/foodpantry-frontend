@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <?php
 echo '<title>Login - Foodpantry</title>';
     include('skel/header.php');
@@ -6,6 +5,9 @@ echo '<title>Login - Foodpantry</title>';
 
 #====================================BODY=======================================
 ?>
+<head>
+    <link rel="stylesheet" href="assets/css/homePage/login.css"/>
+</head>
 
 <section class="page-section clearfix">
 <div class="container">

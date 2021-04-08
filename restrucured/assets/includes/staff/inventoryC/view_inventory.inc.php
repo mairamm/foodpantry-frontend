@@ -1,5 +1,5 @@
 <?php
-include('dbh.inc.php');
+include('../../dbh.inc.php');
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -21,7 +21,7 @@ if($result = mysqli_query($connection, $query))
 
 
 
-	while($row = mysqli_fetch_assoc($result)) 
+	while($row = mysqli_fetch_assoc($result))
 	{
 	    echo "<tr>";
 	    foreach($row as $key => $field)

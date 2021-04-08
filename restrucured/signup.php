@@ -9,6 +9,10 @@ session_start();
 #====================================BODY=======================================
 ?>
 
+<head>
+    <link rel="stylesheet" href="assets/css/homePage/signup.css"/>
+</head>
+
 <h1 class="text-center text-capitalize" style="font-size: 20px;color: #0c1975;"><br>Create your account by filling the form below.</h1>
 
 <div class="login-card">
