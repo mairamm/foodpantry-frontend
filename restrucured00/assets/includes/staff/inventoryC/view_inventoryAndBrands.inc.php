@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="../../../assets/css/homePage/inventory.css";
+<link rel="stylesheet" href="../../../css/homePage/inventory.css";
 
 <div class="invetory">
 <?php

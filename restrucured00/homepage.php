@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html>
-
-<div style="background-image: url('https://3.bp.blogspot.com/-gtWwwBppZyU/XBLm3TuUrGI/AAAAAAAABX8/fkFVUacEpakT2T6bvZKDzN0bNvsiEdfbQCHMYCw/s1600/1280x1024-light-gray-solid-color-background.jpg');">
-
-<head>
 <?php
     include('skel/header.php');
-    include('skel/navbarHome.php');
+    include('skel/navbar/homepage.php');
+#====================================BODY=======================================
 ?>
-    <link rel="stylesheet" href="./assets/css/lib/bootstrap.min.css">
-</head>
 
 <section class="page-section clearfix">
     <div class="container">
@@ -78,12 +71,9 @@
     </div>
 </div>
 
-
-
 <br><br><br>
 
 <?php
+#=================================END-BODY======================================
     include('skel/footer.php');
 ?>
-
-</html>
