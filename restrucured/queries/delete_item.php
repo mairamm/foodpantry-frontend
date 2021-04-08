@@ -12,7 +12,6 @@ if (isset($_POST["Submit"])) {
 include ('deletefunc.inc.php');
 include ('dbh.inc.php');
 
-
 if(emptyField($prodid) == true) {
     header("location: ../staff/staffDelete.php?error=EmptyID");
     echo "Empty field";

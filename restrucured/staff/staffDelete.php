@@ -2,9 +2,15 @@
 <html>
 
 <?php
+<<<<<<< HEAD
 include('skel/header.php');
 include('skel/navbarDelete.php');
 include('queries/delete_item.php');
+=======
+include('../skel/header.php');
+include('../skel/navbarDelete.php');
+//include('queries/delete_item.php');
+>>>>>>> 79c5cc1232716f29b0789d50717f91036c1a3838
 ?>
 
 <body>
