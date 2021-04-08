@@ -9,8 +9,8 @@
 #====================================BODY=======================================
 
 
-    include('./assets/includes/staff/inventoryC/view_inventoryAndBrands.inc.php');
-    include('./assets/includes/staff/inventoryC/view_inventory.inc.php');
+    include('./assets/includes/staff/inventoryC/view_inventoryAndBrands.php');
+    include('./assets/includes/staff/inventoryC/view_inventory.php');
 
 
 #=================================END-BODY======================================
