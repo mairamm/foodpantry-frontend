@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html>
-
 <?php
-include('../skel/header.php');
-include('../skel/navbarAdd.php');
-include('../queries/update_inv.php');
-?>
+echo '<title> Inventory Controller - Foodpantry</title>';
+    include('../../skel/header.php');
+    include('../../skel/navbar/consumerC.php');
+    include('../../assets/includes/staff/staffFunctions.inc.php');
 
+#====================================BODY=======================================\
+?>
 <body>
-<form action="" method="post">
+<form action="../../assets/includes/staff/inventoryC/update_item.inc.php" method="post">
 <main class="page lanidng-page"></main>
 <section class="portfolio-block website gradient" style="background: url(&quot;./assets/img/gray.png&quot;);">
 
@@ -36,13 +35,7 @@ include('../queries/update_inv.php');
 </section>
 </section>
 
-<script src="./assets/js/jquery.min.js"></script>
-<script src="./assets/js/bootstrap.min.js"></script>
-<script src="./assets/js/Application-Form-1.js"></script>
-<script src="./assets/js/Application-Form.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
-<script src="./assets/js/theme.js"></script>
-</form>
-</body>
-
-</html>
+<?php
+#=================================END-BODY======================================
+    include('../../skel/footer.php');
+?>

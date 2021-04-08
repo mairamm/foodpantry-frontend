@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="../../assets/css/homePage/signup.css"/>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap" rel="stylesheet">
 

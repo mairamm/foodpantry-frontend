@@ -1,12 +1,14 @@
 
 <?php
     include('skel/header.php');
-    include('skel/navbarStaff.php');
+    include('skel/navbar/staff.php');
+    include('./assets/includes/staff/staffFunctions.inc.php');
+#====================================BODY=======================================
 
-    ini_set('display_errors', 1);
-    ini_set('display_startup_errors',1);
-    error_reporting(E_ALL);
+    include('./assets/includes/staff/inventoryC/view_inventory.inc.php');
+    include('./assets/includes/staff/inventoryC/view_inventoryAndBrands.inc.php');
 
-    include('queries/inventory.php');
-    include('queries/accounts.php');
+
+#=================================END-BODY======================================
+    include('skel/footer.php')
 ?>

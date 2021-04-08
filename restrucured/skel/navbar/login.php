@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="../../assets/css/homePage/login.css"/>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap" rel="stylesheet">
 
@@ -30,7 +31,7 @@
 
                 </ul>
             </div>
-    <span class="navbar-text actions"><a class="btn btn-primary" role="button" href="http://174.135.102.61/project/foodpantry-frontend/restrucured/login.php" style="background: #ffc629;color: rgb(12, 25, 117);font-family: 'Roboto Slab', serif;float: right;">Login</a><a class="btn btn-primary" role="button" href="http://174.135.102.61/project/foodpantry-frontend/restrucured/signup.php" style="background: #ffc629;color: rgb(12, 25, 117);font-family: 'Roboto Slab', serif;float: right;">Sign Up</a></span>
+    <span class="navbar-text actions"><a class="btn btn-primary" role="button" href="http://174.135.102.61/project/foodpantry-frontend/restrucured/login.php" style="background: #ffc629;color: rgb(12, 25, 117);font-family: 'Roboto Slab', serif;float: right;">Sign Up</a></span>
         </div>
     </nav>
 </body>

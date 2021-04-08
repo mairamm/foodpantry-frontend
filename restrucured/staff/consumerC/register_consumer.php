@@ -1,12 +1,13 @@
 <?php
-include('../skel/header.php');
-include('../skel/navbarRegisterNew.php');
+echo '<title> Consumer Controller - Foodpantry</title>';
+include('../../skel/header.php');
+include('../../skel/navbar/navbarRegisterNew.php');
 ini_set('display_errors', 1);
 ini_set('display_startup_errors',1);
 error_reporting(E_ALL);
 ?>
 
-<script src="../assets/js/outputQRCode.js"></script>
+<script src="../../assets/js/outputQRCode.js"></script>
 
 <body>
   <div id="qrcode"></div>
@@ -15,7 +16,7 @@ error_reporting(E_ALL);
 <?php
   if(isset($_POST['QRCodeGenButton'])) {
     // include qrcode functions
-    include('../assets/includes/qrcodeFunctions.inc.php');
+    include('../../assets/includes/qrcode/qrcodeFunctions.inc.php');
 
     // generate random string
     $qrcodeid = generateRandString();
@@ -30,10 +31,7 @@ error_reporting(E_ALL);
         };
       </script>
       <?php
-    }
-
-
-    ;
+    };
   }
 ?>
 <br>
