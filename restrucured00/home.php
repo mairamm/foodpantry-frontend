@@ -43,10 +43,10 @@
                 <div class="d-flex product-item-title">
                     <div class="d-flex ml-auto bg-faded p-5 rounded">
                         <div>
-                        <h2 class="section-heading mb-0"><span class="section-heading-lower" style="text-align: right;">Our Location</span></h2>
+                        <h2 class="section-heading mb-0"><span class="section-heading-lower" style="text-align: right;">Our Location</span>
                         <span class="section-heading-upper"><strong>Hours of Operation During Closure</strong></span>
 
-                <br><span class="section-heading-upper"><strong>Volunteering</strong></span>
+                <br><span class="section-heading-upper"><strong>Volunteering</strong></span></h2>
                 <p style="font-size: 16px;">Want to volunteer at the Food Pantry, Edible Garden or at any of our Sustainability Events,<br> Click below to sign up!</p>
                 <a href="https://signup.com/go/xrLkksd"><img src="./assets/img/volunteerBtn.png"/></a>
                 <img class="img-fluid d-flex mx-auto product-item-img mb-3 mb-lg-0 rounded" src="./assets/img/Food pantry map.png">
