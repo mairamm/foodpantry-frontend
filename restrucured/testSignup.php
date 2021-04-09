@@ -6,6 +6,7 @@ session_start();
     echo '<title>Signup - Foodpantry</title>';
     include('skel/header.php');
     include('skel/navbarSignup.php');
+    include('queries/ins_person.php');
 #====================================BODY=======================================
 ?>
 
@@ -13,19 +14,29 @@ session_start();
     <link rel="stylesheet" href="assets/css/homePage/signup.css"/>
 </head>
 
+<p id='test'> </p>
+
 <h1 class="text-center text-capitalize" style="font-size: 20px;color: #0c1975;"><br>Create your account by filling the form below.</h1>
 
 <div class="login-card">
-    <form class="form-signin">
+    <form action="" method="post" class="form-signin">
     <span class="reauth-email"></span>
     <strong>First Name</strong><small style="color: var(--red);">*</small>
-    <input type="email" class="form-control" id="inputEmail" required placeholder="First Name" autofocus />
-    <strong>Last Name</strong><small style="color: var(--red);">*</small><input type="email" class="form-control" id="inputEmail-1" required placeholder="Last Name" autofocus />
+    <input type="text" name="fname" class="form-control" id="fname" required placeholder="First Name" autofocus />
+
+    <strong>Last Name</strong><small style="color: var(--red);">*</small>
+    <input type="text" name="lname" class="form-control" id="lname" required placeholder="Last Name" autofocus />
+
     <strong>E-mail</strong><small style="color: var(--red);">*</small>
-    <input type="email" class="form-control" id="inputEmail" required placeholder="Email address" autofocus />
-    <strong>Password</strong><small style="color: var(--red);">*</small><input type="password" class="form-control" id="inputPassword" required placeholder="Password" />
-    <strong>Verify Password</strong><small style="color: var(--red);">*</small><input type="password" class="form-control" id="inputPassword" required placeholder="Password" />
-        <button class="btn btn-primary btn-block btn-lg btn-signin" type="submit">Sign up</button>
+    <input type="email" name="email" class="form-control" id="email" required placeholder="Email address" autofocus />
+
+    <strong>Password</strong><small style="color: var(--red);">*</small>
+    <input type="password" name="passwd" class="form-control" id="passwd" required placeholder="Password" />
+
+    <strong>Verify Password</strong><small style="color: var(--red);">*</small>
+    <input type="password" name="passwdRepeat" class="form-control" id="passwdRepeat" required placeholder="Password" />
+
+        <button class="btn btn-primary btn-block btn-lg btn-signin" type="Submit" name="signupUserSubmit">Sign up</button>
     </form>
 </div>
 

@@ -4,7 +4,7 @@ document.write('<script type="text/javascript" src="https://cdnjs.cloudflare.com
 
 function outputQRCodetoID(id, data) {
   var link = "174.135.102.61/project/foodpantryTEST/"
-    + "foodpantry-frontend/restrucured/signup.php?qrcode="
+    + "foodpantry-frontend/restrucured/testSignup.php?qrcode="
     + data;
   //var link = "google.com";
   var qrc = new QRCode(document.getElementById(id), {
