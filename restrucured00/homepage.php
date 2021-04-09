@@ -4,12 +4,15 @@
 #====================================BODY=======================================
 ?>
 <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
     <link rel="stylesheet" href="./assets/css/lib/bootstrap.min.css">
 </head>
 
 <section class="page-section clearfix">
     <div class="container">
-        <div class="intro"><img class="img-fluid intro-img mb-3 mb-lg-0 rounded" src="./assets/img/comeSign.jpg">
+        <div class="intro">
+            <img class="img-fluid intro-img mb-3 mb-lg-0 rounded" src="./assets/img/comeSign.jpg">
             <div class="text-center intro-text p-5 rounded bg-faded">
                 <h2 class="section-heading mb-4"><span class="section-heading-upper">About Us</span><span class="section-heading-lower">Food Pantry</span></h2>
                 <p class="mb-3"><p style="font-size: 16px;">The CSUB Food Pantry is open to CSUB students, staff, and faculty.
@@ -20,21 +23,22 @@
 </section>
 
 
+
 <div class="container">
     <div class="product-item">
         <div class="d-flex product-item-title">
             <div class="d-flex mr-auto bg-faded p-5 rounded">
-                <img class="img-fluid d-flex mx-auto product-item-img mb-3 mb-lg-0 rounded" src="./assets/img/stockedShelf.jpg" style="width: 500px; padding-right: 20px;" />
+                <img class="img-fluid d-flex mx-auto product-item-img mb-3 mb-lg-0 rounded" src="./assets/img/stockedShelf5.jpg" style="padding-right: 20px;" />
                 <h2 class="section-heading mb-0"><span class="section-heading-lower">How does it work? </span>
                 <span class="section-heading-upper">Each visitor is allotted one visit per week and up to 16 points per visit</span>
-                <img src="./assets/img/pointsExample.jpg" style="width: 520px"/>
+                <img src="./assets/img/pointsExample.jpg" style="width: 500px"/>
                 </h2>
             </div>
          </div>
     </div>
 </div>
 
-<br><br><br><br><br>
+<br><br><br>
 
 <div class="container">
     <div class="product-item">
