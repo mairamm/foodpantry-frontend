@@ -3,6 +3,9 @@
     include('skel/navbar/homepage.php');
 #====================================BODY=======================================
 ?>
+<head>
+    <link rel="stylesheet" href="./assets/css/lib/bootstrap.min.css">
+</head>
 
 <section class="page-section clearfix">
     <div class="container">
