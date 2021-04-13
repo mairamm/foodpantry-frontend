@@ -8,6 +8,8 @@ $query = "SELECT i.QRcode, i.fname, i.lname, i.email, c.`point-balance`, c.`cons
           FROM individual AS i
           INNER JOIN `consumer` AS c ON c.QRcode = i.QRcode;";
 
+
+//placeholder, used for testing to see if it works, subject to deletion
 if($result = mysqli_query($connection, $query))
 {
     if(mysqli_num_rows($result) > 0)

@@ -73,6 +73,9 @@ function deleteItem($connection, $prodid) {
         }
     }
 
+
+//checks if the fields are empty
+
 function additemEmpty($prodid, $brandid, $quantity, $pointcost, $expirationdate, $brandname, $producetype, $prodpic) {
     $result;
     if (empty($prodid) || empty($brandid) || empty($quantity) || empty($pointcost) || empty($expirationdate)    || empty($brandname) || empty($producetype) || empty($prodpic)) {
@@ -84,6 +87,7 @@ function additemEmpty($prodid, $brandid, $quantity, $pointcost, $expirationdate,
     return $result;
 }
 
+//should add items to the database
 
 function addItem($connection, $prodid, $brandid, $quantity, $pointcost, $expirationdate, $brandname, $producetype, $prodpic) {
     $sql1 = "INSERT INTO inventory (`prod-id`, quantity, `point-cost`, `expiration-date`, `prod-pic`) VALUES(?, ?, ?, ?, ?);";
@@ -110,6 +114,9 @@ function addItem($connection, $prodid, $brandid, $quantity, $pointcost, $expirat
 
 // Functions below all handle consumer stuff
 
+
+//checks if the fields are empty this is also used in the deletion of a staff member
+
 function emptyQRcode($QRcode) {
     $result;
     if (empty($prodid)) {
@@ -121,6 +128,7 @@ function emptyQRcode($QRcode) {
     return $result;
 }
 
+//will delete an individual base on their QRcode
 
 function deleteIndividual($connection, $QRcode) {
     $sql = "DELETE FROM individual WHERE QRcode = ?;";
@@ -140,6 +148,8 @@ function deleteIndividual($connection, $QRcode) {
     }
 
 
+//checks if the fields are empty
+
 function addconsumerEmpty($QRcode, $fname, $lname, $email, $passwd, $pointbalance, $consumertype, $avgweekpoints, $visitnum) {
     $result;
     if (empty($QRcode) || empty($fname) || empty($lname) || empty($email) || empty($passwd) || empty($pointbalance) || empty($consumertype) || empty($avgweekpoints) || empty($visitnum)) {
@@ -150,6 +160,8 @@ function addconsumerEmpty($QRcode, $fname, $lname, $email, $passwd, $pointbalanc
     }
     return $result;
 }
+
+//this will add a consumer to the database
 
 function addConsumer($connection, $QRcode, $fname, $lname, $email, $passwd, $pointbalance, $consumertype, $avgweekpoints, $visitnum) {
     $sql1 = "INSERT INTO individual (QRcode, fname, lname, email, passwd) VALUES(?, ?, ?, ?, ?);";
@@ -173,6 +185,8 @@ function addConsumer($connection, $QRcode, $fname, $lname, $email, $passwd, $poi
         }
 }
 
+
+//checks if the fields are empty
 
 function updateConsumerEmpty($QRcode, $pointbalance, $visitnum) {
     if (empty($QRcode) || empty($pointbalance) || empty($visitnum)) {
@@ -205,6 +219,8 @@ function updateConsumer($connection, $QRcode, $pointbalance, $visitnum){
 
 //functions below all handle employee stuff
 
+//checks if the fields are empty
+
 function addStaffEmpty($QRcode, $fname, $lname, $email, $passwd, $isadmin) {
     $result;
     if (empty($QRcode) || empty($fname) || empty($lname) || empty($email) || empty($passwd) || empty($admin)) {
@@ -215,6 +231,8 @@ function addStaffEmpty($QRcode, $fname, $lname, $email, $passwd, $isadmin) {
     }
     return $result;
 }
+
+//will add a staff member to the data base, will take in the QRcode name, email password, and the value if they are an admin or not
 
 function addStaff($connection, $QRcode, $fname, $lname, $email, $passwd, $isadmin) {
     $sql1 = "INSERT INTO individual (QRcode, fname, lname, email, passwd) VALUES(?, ?, ?, ?, ?);";
@@ -238,6 +256,8 @@ function addStaff($connection, $QRcode, $fname, $lname, $email, $passwd, $isadmi
         }
 }
 
+//checks if the fields are empty
+
 function updateStaffEmpty($QRcode, $fname, $lname, $email, $passwd) {
     if (empty($QRcode) || empty($fname) || empty($lname) || empty($email) || empty($passwd)) {
         $result == true;
@@ -246,6 +266,8 @@ function updateStaffEmpty($QRcode, $fname, $lname, $email, $passwd) {
     }
     return $result;
 }
+
+//this will update the staff members name email and password based on their QRcode
 
 function updateStaff($connection, $QRcode, $fname, $lname, $email, $passwd){
     $sql = "UPDATE individual SET `fname`=?, `lname`=?, `email`=?, `passwd`=? WHERE `QRcode`=?;";
@@ -261,6 +283,25 @@ function updateStaff($connection, $QRcode, $fname, $lname, $email, $passwd){
         mysqli_stmt_close($stmt);
         header("location: ../../../staff/staffC/update_staff.php?error=success");
         echo"Database updated!";
+        exit();
+        }
+    }
+
+//this will and should delete a staff member from the database entirely
+
+function deleteStaff($connection, $QRcode) {
+    $sql = "DELETE FROM individual WHERE QRcode = ?;";
+    $stmt = mysqli_stmt_init($connection);
+    if(!mysqli_stmt_prepare($stmt, $sql)) {
+        echo "Delete failed: (". $stmt->errno.") " .$stmt->error. "<br>";
+        exit();
+        } else {
+
+        mysqli_stmt_bind_param($stmt, "s", $QRcode);
+        mysqli_stmt_execute($stmt);
+        mysqli_stmt_close($stmt);
+        header("location: ../../../staff/staffC/delete_staff.inc.php?error=success");
+        echo"Staff Member Deleted!";
         exit();
         }
     }
