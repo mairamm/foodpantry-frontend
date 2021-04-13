@@ -14,7 +14,7 @@ include ('../../dbh.inc.php');
 include ('../staffFunctions.inc.php');
 
 
-if (updateInvEmpty($QRcode, $pointbalance,$visitnum ) == true) {
+if (updateConsumerEmpty($QRcode, $pointbalance,$visitnum ) == true) {
     header("location: ../../../../staff/consumerC/update_consumer.php?error=EmptyQRcode");
     echo "please enter all fields";
     exit();

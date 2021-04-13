@@ -174,7 +174,7 @@ function addConsumer($connection, $QRcode, $fname, $lname, $email, $passwd, $poi
 }
 
 
-function updateInvEmpty($QRcode, $pointbalance, $visitnum) {
+function updateConsumerEmpty($QRcode, $pointbalance, $visitnum) {
     if (empty($QRcode) || empty($pointbalance) || empty($visitnum)) {
         $result == true;
     } else {
