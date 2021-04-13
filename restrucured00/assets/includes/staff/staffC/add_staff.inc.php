@@ -1,26 +1,26 @@
 <?php
-//include handles connection to the database
-include '../../dbh.inc.php';
 
-//displays all errros and warnings
+//checks for any errors
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-$QRcode = mysqli_real_escape_string($connection, $_POST['QRcode']);
-$fname = mysqli_real_escape_string($connection, $_POST['Firstname']);
-$lname = mysqli_real_escape_string($connection, $_POST['Lastname']);
-$email = mysqli_real_escape_string($connection, $_POST['Email']);
-$passwd = mysqli_real_escape_string($connection, $_POST['Password']);
+if (isset($_POST["Submit"])) {
+    $QRcode = $_POST["QRcode"];
+    $fname = $_POST["fname"];
+    $lname = $_POST["lname"];
+    $email = $_POST["email"];
+    $passwd = $_POST["passwd"];
+    $pointbalance = $_POST["is-admin"];
 
-//this will allow the employee to add new people into the database
-$sql = "INSERT INTO individual (QRcode, Firstname, Lastname, Email, Password) VALUES('" . $QRcode . "','" . $fname ."','" . $lname . "','" . $email . "','" $passwd . "')";
 
-if(mysqli_query($connection, $sql)){
-    echo "User added successfully!";
-} else{
-echo "ERROR: Could not add $sql. " . mysqli_error($connection);
+include('../../dbh.inc.php');
+include('../staffFunctions.inc.php');
+
+if (addStaffEmpty($QRcode, $fname, $lname, $email, $passwd, $pointbalance, $consumertype, $avgweekpoints, $visitnum) {
+    header("location: ../../../../staff/staffC/add_staff.php?error=EmptyFields");
+    exit();
 }
 
-mysqli_close($connection);
-?>
+addStaff($connection, $QRcode, $fname, $lname, $email, $passwd, $isadmin)
+}

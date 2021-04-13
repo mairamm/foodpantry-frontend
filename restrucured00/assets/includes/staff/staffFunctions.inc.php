@@ -142,7 +142,7 @@ function deleteIndividual($connection, $QRcode) {
 
 function addconsumerEmpty($QRcode, $fname, $lname, $email, $passwd, $pointbalance, $consumertype, $avgweekpoints, $visitnum) {
     $result;
-    if (empty($QRcode) || empty($fname) || empty($lname) || empty($email) || empty($passwd) || empty($pointbalance) || empty($consumertype) || empty($avgweekpoints) || empty($visitnum) {
+    if (empty($QRcode) || empty($fname) || empty($lname) || empty($email) || empty($passwd) || empty($pointbalance) || empty($consumertype) || empty($avgweekpoints) || empty($visitnum)) {
         $result = true;
     } else { 
         $result - false;
@@ -201,3 +201,39 @@ function updateConsumer($connection, $QRcode, $pointbalance, $visitnum){
         exit();
         }
     }
+
+
+//functions below all handle employee stuff
+
+function addStaffEmpty($QRcode, $fname, $lname, $email, $passwd, $isadmin) {
+    $result;
+    if (empty($QRcode) || empty($fname) || empty($lname) || empty($email) || empty($passwd) || empty($admin)) {
+        $result = true;
+    } else { 
+        $result - false;
+
+    }
+    return $result;
+}
+
+function addStaff($connection, $QRcode, $fname, $lname, $email, $passwd, $isadmin) {
+    $sql1 = "INSERT INTO individual (QRcode, fname, lname, email, passwd) VALUES(?, ?, ?, ?, ?);";
+    $sql2 = "INSERT INTO staff (QRcode, `is-admin`) VALUES(?, ?);";
+    $stmt = mysqli_stmt_init($connection);
+    if(!mysqli_stmt_prepare($stmt, $sql1)) {
+        echo "Add failed: (". $stmt->errno.") " .$stmt->error. "<br>";
+        exit();
+        } 
+        
+    if(!mysqli_stmt_prepare($stmt, $sql2)) {
+        echo "Add failed: (". $stmt->errno.") " .$stmt->error. "<br>";
+        exit();
+        } else {
+
+        mysqli_stmt_bind_param($stmt, "ssssss", $QRcode, $fname, $lname, $email, $passwd, $isadmin);
+        mysqli_stmt_execute($stmt);
+        mysqli_stmt_close($stmt);
+        header("location: ../../../staff/staffC/add_staff.php?error=success");
+        exit();
+        }
+}
