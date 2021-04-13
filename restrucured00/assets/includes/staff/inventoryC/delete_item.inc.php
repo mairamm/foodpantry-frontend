@@ -9,8 +9,8 @@ if (isset($_POST["Submit"])) {
     $prodid = $_POST["prod-id"];
 
 //this include handles the connection to the database
-include ('deletefunc.inc.php');
-include ('dbh.inc.php');
+include ('../staffFunctions.inc.php');
+include ('../../dbh.inc.php');
 
 if(emptyField($prodid) == true) {
     header("location: ../../../../staff/delete_item.php?error=EmptyID");
