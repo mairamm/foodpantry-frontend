@@ -13,7 +13,7 @@ include ('../staffFunctions.inc.php');
 include ('../../dbh.inc.php');
 
 if(emptyField($prodid) == true) {
-    header("location: ../../../../staff/delete_item.php?error=EmptyID");
+    header("location: ../../../../staff/inventoryC/delete_item.php?error=EmptyID");
     echo "Empty field";
     exit();
 }
