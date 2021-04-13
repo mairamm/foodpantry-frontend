@@ -7,8 +7,8 @@ error_reporting(E_ALL);
 
 if (isset($_POST["Submit"])) {
     $prodid = $_POST["QRcode"];
-    $prodid = $_POST["point-balance"];
-    $prodid = $_POST["visit-num"];
+    $pointbalance = $_POST["point-balance"];
+    $visitnum = $_POST["visit-num"];
 
 include ('../../dbh.inc.php');
 include ('../staffFunctions.inc.php');

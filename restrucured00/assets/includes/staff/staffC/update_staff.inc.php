@@ -1,26 +1,27 @@
 <?php
-//include handles connection to the database
-include '../../dbh.inc.php';
 
-//will display all errors and warnings
+//will display errors
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-$QRcode = mysqli_real_escape_string($connection, $_POST['QRcode']);
-$fname = mysqli_real_escape_string($connection, $_POST['Firstname']);
-$lname = mysqli_real_escape_string($connection, $_POST['Lastname']);
-$email = mysqli_real_escape_string($connection, $_POST['Email']);
-$passwd = mysqli_real_escape_string($connection, $_POST['Password']);
+if (isset($_POST["Submit"])) {
+    $prodid = $_POST["QRcode"];
+    $fname = $_POST["fname"];
+    $lname = $_POST["lname"];
+    $email = $_POST["email"];
+    $passwd = $_POST["passwd"];
 
-//this should allow values from the inventory to be updated
-if(mysqli_query($connection, "CALL upInventory(". $QRcode . "," . $fname . ",'" . $lname . "'," . $email . "," . $email . ",". ");")){
+include ('../../dbh.inc.php');
+include ('../staffFunctions.inc.php');
 
 
-	echo "Info updated.";
-} else{
-    echo "ERROR: Could not update $sql. " . mysqli_error($connection);
+if (updateStaffEmpty($QRcode, $fname, $lname,$email, $passwd) == true) {
+    header("location: ../../../../staff/staffC/update_staff.php?error=EmptyFields");
+    echo "please enter all fields";
+    exit();
 }
 
-mysqli_close($connection);
-?>
+updateStaff($connection, $QRcode, $fname, $lname, $email, $passwd);
+
+}

@@ -6,7 +6,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 if (isset($_POST["Submit"])) {
-    $prodid = $_POST["QRcode"];
+    $QRcode = $_POST["QRcode"];
 
 include ('../../dbh.inc.php');
 include ('../staffFunctions.inc.php');

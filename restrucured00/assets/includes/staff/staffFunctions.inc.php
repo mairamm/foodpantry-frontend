@@ -237,3 +237,30 @@ function addStaff($connection, $QRcode, $fname, $lname, $email, $passwd, $isadmi
         exit();
         }
 }
+
+function updateStaffEmpty($QRcode, $fname, $lname, $email, $passwd) {
+    if (empty($QRcode) || empty($fname) || empty($lname) || empty($email) || empty($passwd)) {
+        $result == true;
+    } else {
+            $result == false;
+    }
+    return $result;
+}
+
+function updateStaff($connection, $QRcode, $fname, $lname, $email, $passwd){
+    $sql = "UPDATE individual SET `fname`=?, `lname`=?, `email`=?, `passwd`=? WHERE `QRcode`=?;";
+    $stmt = mysqli_stmt_init($connection);
+    if(!mysqli_stmt_prepare($stmt, $sql)) {
+        header("location: ../../../staff/staffC/update_staff.php?error=failedtoupdate");
+        echo "Update failed: (". $stmt->errno.") " .$stmt->error. "<br>";
+        exit();
+        } else {
+
+        mysqli_stmt_bind_param($stmt, "sssss", $QRcode, $fname, $lname, $email, $passwd);
+        mysqli_stmt_execute($stmt);
+        mysqli_stmt_close($stmt);
+        header("location: ../../../staff/staffC/update_staff.php?error=success");
+        echo"Database updated!";
+        exit();
+        }
+    }
