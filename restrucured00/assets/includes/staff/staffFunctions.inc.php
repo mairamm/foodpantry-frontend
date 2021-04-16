@@ -1,4 +1,8 @@
 <?php
+ini_set('display_errors',1);
+ini_set('display_startup_errors',1);
+error_reporting(E_ALL);
+
 
 //functions below handle inventory stuff
 
@@ -114,7 +118,7 @@ function addItem($connection, $prodid, $brandid, $quantity, $pointcost, $expirat
 
 function emptyQRcode($QRcode) {
     $result;
-    if (empty($prodid)) {
+    if (empty($QRcode)) {
         $result = true;
     } else {
             $result = false;
@@ -122,21 +126,31 @@ function emptyQRcode($QRcode) {
     }
     return $result;
 }
+function emptyType($consumertype) {
+    $result;
+    if (empty($consumertype)) {
+        $result = true;
+    } else {
+            $result = false;
+
+    }
+    return $result;
+    }
 
 //will delete an individual base on their QRcode
 
-function deleteIndividual($connection, $QRcode) {
-    $sql = "DELETE FROM individual WHERE QRcode = ?;";
+function deleteIndividual($connection, $consumertype) {
+    $sql = "DELETE FROM consumer WHERE `consumer-type` = ?;";
     $stmt = mysqli_stmt_init($connection);
     if(!mysqli_stmt_prepare($stmt, $sql)) {
         echo "Delete failed: (". $stmt->errno.") " .$stmt->error. "<br>";
         exit();
         } else {
 
-        mysqli_stmt_bind_param($stmt, "s", $QRcode);
+        mysqli_stmt_bind_param($stmt, "s", $consumertype);
         mysqli_stmt_execute($stmt);
         mysqli_stmt_close($stmt);
-        header("location: ../../../../staff/consumerC/delete_consumer.inc.php?error=success");
+        header("location: ../../../../staff/consumerC/delete_consumer.php?error=success");
         echo"Individual Deleted!";
         exit();
         }
@@ -177,8 +191,8 @@ function addConsumer($connection, $QRcode, $fname, $lname, $email, $passwd, $poi
 
 //checks if the fields are empty
 
-function updateConsumerEmpty($QRcode, $pointbalance, $visitnum) {
-    if (empty($QRcode) || empty($pointbalance) || empty($visitnum)) {
+function updateConsumerEmpty($consumertype, $pointbalance, $avgweekpoints, $visitnum) {
+    if (empty($consumertype) || empty($pointbalance) || empty($avfweekpoints) || empty($visitnum)) {
         $result == true;
     } else {
             $result == false;
@@ -187,8 +201,8 @@ function updateConsumerEmpty($QRcode, $pointbalance, $visitnum) {
 }
 
 //this function will allow the staff to update a consumers point balance and number of vists based off their QRcode
-function updateConsumer($connection, $QRcode, $pointbalance, $visitnum){
-    $sql = "UPDATE consumer SET `point-balance`=?, `visit-num`=? WHERE `QRcode`=?;";
+function updateConsumer($connection, $consumertype, $pointbalance, $avgweekpoints, $visitnum){
+    $sql = "CALL update_consumer (?, ?, ? ,?);";
     $stmt = mysqli_stmt_init($connection);
     if(!mysqli_stmt_prepare($stmt, $sql)) {
         header("location: ../../../../staff/consumerC/update_consumer.php?error=failedtoupdate");
@@ -196,7 +210,7 @@ function updateConsumer($connection, $QRcode, $pointbalance, $visitnum){
         exit();
         } else {
 
-        mysqli_stmt_bind_param($stmt, "sss", $QRcode, $pointbalance, $visitnum);
+        mysqli_stmt_bind_param($stmt, "ssss", $consumertype, $pointbalance, $avgweekpoints,$visitnum);
         mysqli_stmt_execute($stmt);
         mysqli_stmt_close($stmt);
         header("location: ../../../../staff/consumerC/update_consumer.php?error=success");
@@ -247,8 +261,8 @@ function addStaff($connection, $QRcode, $fname, $lname, $email, $passwd, $isadmi
 
 //checks if the fields are empty
 
-function updateStaffEmpty($QRcode, $fname, $lname, $email, $passwd) {
-    if (empty($QRcode) || empty($fname) || empty($lname) || empty($email) || empty($passwd)) {
+function updateStaffEmpty($consumertype, $fname, $lname, $email, $passwd) {
+    if (empty($consumertype) || empty($fname) || empty($lname) || empty($email) || empty($passwd)) {
         $result == true;
     } else {
             $result == false;
@@ -279,7 +293,7 @@ function updateStaff($connection, $QRcode, $fname, $lname, $email, $passwd){
 //this will and should delete a staff member from the database entirely
 
 function deleteStaff($connection, $QRcode) {
-    $sql = "DELETE FROM individual WHERE QRcode = ?;";
+    $sql = "DELETE FROM individual WHERE `QRcode` = ?;";
     $stmt = mysqli_stmt_init($connection);
     if(!mysqli_stmt_prepare($stmt, $sql)) {
         echo "Delete failed: (". $stmt->errno.") " .$stmt->error. "<br>";
@@ -289,7 +303,7 @@ function deleteStaff($connection, $QRcode) {
         mysqli_stmt_bind_param($stmt, "s", $QRcode);
         mysqli_stmt_execute($stmt);
         mysqli_stmt_close($stmt);
-        header("location: ../../../../staff/staffC/delete_staff.inc.php?error=success");
+        header("location: ../../../../staff/staffC/delete_staff.php?error=success");
         echo"Staff Member Deleted!";
         exit();
         }

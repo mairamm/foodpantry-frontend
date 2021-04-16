@@ -20,7 +20,7 @@ echo '<title> Consumer Controller - Foodpantry</title>';
     <div class="form-group">
     <div class="form-row">
 
-    <p><label for="consumer-id">Consumer ID</label><input class="form-control" type="ID" name="con-id" id="conid">
+    <p><label for="consumer-type">Consumer ID</label><input class="form-control" type="ID" name="consumer-type" id="consumer-type">
 
     <br>
     <!--

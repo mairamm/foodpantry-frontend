@@ -6,7 +6,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 if (isset($_POST["Submit"])) {
-    $prodid = $_POST["QRcode"];
+    $consumertype = $_POST["QRcode"];
     $fname = $_POST["fname"];
     $lname = $_POST["lname"];
     $email = $_POST["email"];
