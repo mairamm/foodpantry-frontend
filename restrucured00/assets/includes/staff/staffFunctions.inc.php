@@ -3,8 +3,8 @@
 //functions below handle inventory stuff
 
 // This function is made to check if update inventory items fields are empty or not
-function updateInvEmpty($prodid, $brandid, $quantity, $pointcost, $expirationdate, $brandname,$producetype) {
-    if (empty($prodid) || empty($quantity) || empty($pointcost) || empty($expirationdate)) {
+function updateInvEmpty($prodid, $brandid, $quantity, $pointcost, $expirationdate, $brandname,$producetype,$prodpic) {
+    if (empty($prodid) || empty($brandid) || empty($quantity) || empty($pointcost) || empty($expirationdate) || empty($brandname) || empty($producetype) || empty($prodpic)) {
         $result == true;
     } else {
             $result == false;
@@ -13,8 +13,8 @@ function updateInvEmpty($prodid, $brandid, $quantity, $pointcost, $expirationdat
 }
 
 // This function is made to update inventory items based on the selected product id
-function updateInventory($connection, $prodid, $quantity, $pointcost, $expirationdate){
-    $sql = "UPDATE inventory SET quantity=?, `point-cost`=?,`expiration-date`=? WHERE `prod-id`=?;";
+function updateInventory($connection, $prodid, $brandid, $quantity, $pointcost, $expirationdate, $brandname, $producetype, $prodpic){
+    $sql = "CALL update_item (?,?,?,?,?,?,?,?); ";
     $stmt = mysqli_stmt_init($connection);
     if(!mysqli_stmt_prepare($stmt, $sql)) {
         header("location: ../../../staff/inventoryC/update_item.php?error=failedtoupdate");
@@ -22,7 +22,7 @@ function updateInventory($connection, $prodid, $quantity, $pointcost, $expiratio
         exit();
         } else {
 
-        mysqli_stmt_bind_param($stmt, "ssss", $prodid, $quantity, $pointcost, $expirationdate);
+        mysqli_stmt_bind_param($stmt, "ssssssss", $prodid, $brandid, $quantity, $pointcost, $expirationdate, $brandname, $producetype, $prodpic);
         mysqli_stmt_execute($stmt);
         mysqli_stmt_close($stmt);
         header("location: ../../../staff/inventoryC/update_item.php?error=success");
