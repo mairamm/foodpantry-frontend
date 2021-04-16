@@ -90,15 +90,9 @@ function additemEmpty($prodid, $brandid, $quantity, $pointcost, $expirationdate,
 //should add items to the database
 
 function addItem($connection, $prodid, $brandid, $quantity, $pointcost, $expirationdate, $brandname, $producetype, $prodpic) {
-    $sql1 = "INSERT INTO inventory (`prod-id`, quantity, `point-cost`, `expiration-date`, `prod-pic`) VALUES(?, ?, ?, ?, ?);";
-    $sql2 = "INSERT INTO brandType (`brand-id`, `brand-name`, `produce-type`) VALUES(?, ?, ?);";
+    $sql1 = "CALL add_item (?, ?, ?, ?, ?, ?, ?, ?);";
     $stmt = mysqli_stmt_init($connection);
     if(!mysqli_stmt_prepare($stmt, $sql1)) {
-        echo "Add failed: (". $stmt->errno.") " .$stmt->error. "<br>";
-        exit();
-        } 
-        
-    if(!mysqli_stmt_prepare($stmt, $sql2)) {
         echo "Add failed: (". $stmt->errno.") " .$stmt->error. "<br>";
         exit();
         } else {
@@ -107,7 +101,7 @@ function addItem($connection, $prodid, $brandid, $quantity, $pointcost, $expirat
         mysqli_stmt_execute($stmt);
         mysqli_stmt_close($stmt);
         header("location: ../../../staff/inventoryC/add_item.php?error=success");
-        echo"Item Deleted!";
+        echo"Item Added!";
         exit();
         }
 }
@@ -164,18 +158,12 @@ function addconsumerEmpty($QRcode, $fname, $lname, $email, $passwd, $pointbalanc
 //this will add a consumer to the database
 
 function addConsumer($connection, $QRcode, $fname, $lname, $email, $passwd, $pointbalance, $consumertype, $avgweekpoints, $visitnum) {
-    $sql1 = "INSERT INTO individual (QRcode, fname, lname, email, passwd) VALUES(?, ?, ?, ?, ?);";
-    $sql2 = "INSERT INTO consumer (QRcode, `point-balance`, `consumer-type`, `avg-week-points`, `visit-num`) VALUES(?, ?, ?, ?, ?);";
+    $sql1 = "CALL add_consumer(?, ?, ?, ?, ?, ?, ?, ?, ?);";
     $stmt = mysqli_stmt_init($connection);
     if(!mysqli_stmt_prepare($stmt, $sql1)) {
         echo "Add failed: (". $stmt->errno.") " .$stmt->error. "<br>";
         exit();
-        } 
-        
-    if(!mysqli_stmt_prepare($stmt, $sql2)) {
-        echo "Add failed: (". $stmt->errno.") " .$stmt->error. "<br>";
-        exit();
-        } else {
+        }  else {
 
         mysqli_stmt_bind_param($stmt, "sssssssss", $QRcode, $fname, $lname, $email, $passwd, $pointbalance, $consumertype, $avgweekpoints, $visitnum);
         mysqli_stmt_execute($stmt);
