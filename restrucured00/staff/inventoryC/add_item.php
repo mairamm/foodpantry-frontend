@@ -35,6 +35,8 @@ echo '<title> Inventory Controller - Foodpantry</title>';
 </section>
 </section>
 
+       </form>
+        </body>
 
 <?php
 #=================================END-BODY======================================

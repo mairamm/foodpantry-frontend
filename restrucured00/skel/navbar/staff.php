@@ -16,16 +16,13 @@
 	<div class="container"><a class="navbar-brand" href="#" style="color: rgb(255,255,255);font-size: 35px;font-style: normal;font-family: 'Roboto Slab', serif;">Food Pantry</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
 	    <div class="collapse navbar-collapse" id="navcol-1">
 		<ul class="nav navbar-nav mr-auto">
-		    <li class="nav-item"><a class="nav-link active" href="#" style="color: rgb(255,255,255);font-family: 'Roboto Slab', serif;"><strong></strong></a></li>
+		    <li class="nav-item"><a class="nav-link" href="#" style="color: rgb(255,255,255);font-family: 'Roboto Slab', serif;"><strong>ADD</strong></a></li>
 		    <li class="nav-item"><a class="nav-link" href="#" style="color: rgb(255,255,255);font-family: 'Roboto Slab', serif;"><strong>UPDATE</strong></a></li>
 	      <li class="nav-item"><a class="nav-link" href="#" style="color: rgb(255,255,255);font-family: 'Roboto Slab', serif;"><strong>DELETE</strong></a></li>
-	      <li class="nav-item"><a class="nav-link" href="#" style="color: rgb(255,255,255);font-family: 'Roboto Slab', serif;"><strong>ACCOUNTS</strong></a></li>
+	      <li class="nav-item"><a class="nav-link" href="http://174.135.102.61/project/abattle/foodpantry-frontend/restrucured00/staff/consumerC.php" style="color: rgb(255,255,255);font-family: 'Roboto Slab', serif;"><strong>ACCOUNTS</strong></a></li>
         <li class="nav-item"><a class="nav-link active" href="../restrucured/staff/staffRegister.php" style="color: rgb(255,255,255);font-family: 'Roboto Slab', serif;"><strong>REGISTER NEW</strong></a></li>
 
 
-			<div class="dropdown-menu"><a class="dropdown-item" href="#" style="color: rgb(255,255,255);font-family: 'Roboto Slab', serif;"><strong>661-654-FOOD</strong></a><a class="dropdown-item" href="#"><strong>foodpantry@csub.edu</strong></a></div>
-		    </li>
-		</ul>
 	    </div>
 	   </div>
     </nav>

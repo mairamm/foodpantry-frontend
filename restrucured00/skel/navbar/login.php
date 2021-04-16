@@ -1,42 +1,43 @@
 <link rel="stylesheet" href="../../assets/css/lib/bootstrap.min.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap" rel="stylesheet">
+
 <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
+
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@310;400;700&display=swap" rel="stylesheet">
 
 <body style="color: rgb(0,0,0);font-size: 17px;">
-    <div>
-        <div class="alert alert-success" role="alert" style="background: #ffc629;margin: 0px 0px 1px;text-align: center;"><span style="text-align: center;color: rgb(0,0,0);font-size: 17px;font-family: 'Quattrocento Sans', sans-serif;"><i class="far fa-bell"></i><a class="link" href="https://www.csub.edu/alert" style="color: rgb(0,0,0);font-family: 'Quattrocento Sans', sans-serif;"><strong>Alerts: </strong><a class="link" href="https://www.csub.edu/covid-19" style="color: rgb(0,0,0);font-family: 'Quattrocento Sans', sans-serif;"> Covid-19 | </a><a class="link" href="https://www.csub.edu/returntocampus" style="color: rgb(0,0,0);font-family: 'Quattrocento Sans', sans-serif;">Return to Campus |</a><a class="link" href="https://www.csub.edu/cares" style="color: rgb(0,0,0);font-family: 'Quattrocento Sans', sans-serif;"> CARES Act</a></span>
+<div>
+<div class="alert alert-success" role="alert" style="background: #ffc629;margin: 0px 0px 1px;text-align: center;"><span style="text-align: center;color: rgb(0,0,0);font-size: 17px;font-family: 'Quattrocento Sans', sans-serif;"><i class="far fa-bell"></i><a class="link" href="https://www.csub.edu/alert" style="color: rgb(0,0,0);font-family: 'Quattrocento Sans', sans-serif;"><strong>Alerts: </strong><a class="link" href="https://www.csub.edu/covid-19" style="color: rgb(0,0,0);font-family: 'Quattrocento Sans', sans-serif;"> Covid-19 | </a><a class="link" href="https://www.csub.edu/returntocampus" style="color: rgb(0,0,0);font-family: 'Quattrocento Sans', sans-serif;">Return to Campus |</a><a class="link" href="https://www.csub.edu/cares" style="color: rgb(0,0,0);font-family: 'Quattrocento Sans', sans-serif;"> CARES Act</a></span>
 </div>
-    </div>
+</div>
 
-    <nav class="navbar navbar-inverse navbar-lit navbar-expand-md navigation-clean-button" style="background: #0c1975;">
+<nav class="navbar navbar-inverse navbar-lit navbar-expand-md navigation-clean-button" style="background: #0c1975;">
 
-        <div class="container">
+<div class="container">
 
-        <a class="navbar-brand" href="http://174.135.102.61/project/foodpantry-frontend/restrucured/homepage.php" style="color: rgb(255,255,255);font-size: 35px;font-style: normal;font-family: 'Roboto Slab', serif;">Food Pantry</a>
-        <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="navbar-toggler-icon"></span></button>
+<a class="navbar-brand" href="http://174.135.102.61/project/foodpantry-frontend/restrucured/homepage.php" style="color: rgb(255,255,255);font-size: 35px;font-style: normal;font-family: 'Roboto Slab', serif;">Food Pantry</a>
 
-            <div class="collapse navbar-collapse" id="navcol-1">
 
-                <ul class="nav navbar-nav mr-auto">
+<button data-toggle="collapse" class="navbar-toggler navbar-dark" data-target="#navcol-1"><span class="navbar-toggler-icon"></span></button>
 
-                    <li class="nav-item"><a class="nav-link active" href="https://www.csub.edu/sustainability/foodpantry/FAQ_FoodPantry/Food%20Pantry%20Donation%20Suggestions.pdf" style="color: rgb(255,255,255);font-family: 'Roboto Slab', serif;"><strong>Donations</strong></a></li>
+<div class="collapse navbar-collapse" id="navcol-1">
 
-                    <li class="nav-item"><a class="nav-link" href="#" style="color: rgb(255,255,255);font-family: 'Roboto Slab', serif;"><strong>Inventory</strong></a></li>
+<ul class="nav navbar-nav mr-auto">
 
-                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" style="color: rgb(255,255,255);font-family: 'Roboto Slab', serif;"><strong>Contact</strong></a>
+<li class="nav-item"><a class="nav-link active" href="https://www.csub.edu/sustainability/foodpantry/FAQ_FoodPantry/Food%20Pantry%20Donation%20Suggestions.pdf" style="color: rgb(255,255,255);font-family: 'Roboto Slab', serif;"><strong>Donations</strong></a></li>
 
-                        <div class="dropdown-menu"><a class="dropdown-item" style="font-family: 'Roboto Slab', serif;"><strong>661-654-FOOD</strong></a><a class="dropdown-item"><strong>foodpantry@csub.edu</strong></a></div>
-                    </li>
+<li class="nav-item"><a class="nav-link" href="#" style="color: rgb(255,255,255);font-family: 'Roboto Slab', serif;"><strong>Inventory</strong></a></li>
 
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <script src="../../assets/js/jquery.min.js"></script>
-    <script src="../../assets/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/current-day.js"></script>
+<li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#" style="color: rgb(255,255,255);font-family: 'Roboto Slab', serif;"><strong>Contact</strong></a>
+
+<div class="dropdown-menu"><a class="dropdown-item" style="font-family: 'Roboto Slab', serif;"><strong>661-654-FOOD</strong></a><a class="dropdown-item"><strong>foodpantry@csub.edu</strong></a></div>
+
+</div>
+</nav>
+<script src="../../assets/js/jquery.min.js"></script>
+<script src="../../assets/js/bootstrap.min.js"></script>
+<script src="../../assets/js/current-day.js"></script>
 
 </body>

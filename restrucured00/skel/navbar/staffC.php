@@ -17,8 +17,8 @@
 	    <div class="collapse navbar-collapse" id="navcol-1">
 		<ul class="nav navbar-nav mr-auto">
 		    <li class="nav-item"><a class="nav-link active" href="#" style="color: rgb(255,255,255);font-family: 'Roboto Slab', serif;"><strong>ADD</strong></a></li>
-		    <li class="nav-item"><a class="nav-link" href="#" style="color: rgb(255,255,255);font-family: 'Roboto Slab', serif;"><strong>UPDATE</strong></a></li>
-  <li class="nav-item"><a class="nav-link" href="#" style="color: rgb(255,255,255);font-family: 'Roboto Slab', serif;"><strong>ACCOUNTS</strong></a></li>
+		    <li class="nav-item"><a class="nav-link" href="#" style="color: rgb(255,255,255);font-family: 'Roboto Slab', serif;"><strong>Delete</strong></a></li>
+  <li class="nav-item"><a class="nav-link" href="#" style="color: rgb(255,255,255);font-family: 'Roboto Slab', serif;"><strong>Update</strong></a></li>
 
 
 			<div class="dropdown-menu"><a class="dropdown-item" href="#" style="color: rgb(255,255,255);font-family: 'Roboto Slab', serif;"><strong>661-654-FOOD</strong></a><a class="dropdown-item" href="#"><strong>foodpantry@csub.edu</strong></a></div>
