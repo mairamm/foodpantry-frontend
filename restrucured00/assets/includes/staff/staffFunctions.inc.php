@@ -4,6 +4,7 @@
 
 // This function is made to check if update inventory items fields are empty or not
 function updateInvEmpty($prodid, $brandid, $quantity, $pointcost, $expirationdate, $brandname,$producetype,$prodpic) {
+    $result;
     if (empty($prodid) || empty($brandid) || empty($quantity) || empty($pointcost) || empty($expirationdate) || empty($brandname) || empty($producetype) || empty($prodpic)) {
         $result == true;
     } else {
@@ -17,7 +18,7 @@ function updateInventory($connection, $prodid, $brandid, $quantity, $pointcost, 
     $sql = "CALL update_item (?,?,?,?,?,?,?,?); ";
     $stmt = mysqli_stmt_init($connection);
     if(!mysqli_stmt_prepare($stmt, $sql)) {
-        header("location: ../../../staff/inventoryC/update_item.php?error=failedtoupdate");
+        header("location: ../../../../staff/inventoryC/update_item.php?error=failedtoupdate");
         echo "Update failed: (". $stmt->errno.") " .$stmt->error. "<br>";
         exit();
         } else {
@@ -25,7 +26,7 @@ function updateInventory($connection, $prodid, $brandid, $quantity, $pointcost, 
         mysqli_stmt_bind_param($stmt, "ssssssss", $prodid, $brandid, $quantity, $pointcost, $expirationdate, $brandname, $producetype, $prodpic);
         mysqli_stmt_execute($stmt);
         mysqli_stmt_close($stmt);
-        header("location: ../../../staff/inventoryC/update_item.php?error=success");
+        header("location: ../../../../staff/inventoryC/update_item.php?error=success");
         echo"Database updated!";
         exit();
         }
@@ -67,7 +68,7 @@ function deleteItem($connection, $prodid) {
         mysqli_stmt_bind_param($stmt, "s", $prodid);
         mysqli_stmt_execute($stmt);
         mysqli_stmt_close($stmt);
-        header("location: ../../../staff/inventoryC/delete_item.php?error=success");
+        header("location: ../../../../staff/inventoryC/delete_item.php?error=success");
         echo"Item Deleted!";
         exit();
         }
@@ -100,7 +101,7 @@ function addItem($connection, $prodid, $brandid, $quantity, $pointcost, $expirat
         mysqli_stmt_bind_param($stmt, "ssssssss", $prodid, $brandid, $quantity, $pointcost, $expirationdate,$brandname, $producetype,$prodpic);
         mysqli_stmt_execute($stmt);
         mysqli_stmt_close($stmt);
-        header("location: ../../../staff/inventoryC/add_item.php?error=success");
+        header("location: ../../../../staff/inventoryC/add_item.php?error=success");
         echo"Item Added!";
         exit();
         }
@@ -135,7 +136,7 @@ function deleteIndividual($connection, $QRcode) {
         mysqli_stmt_bind_param($stmt, "s", $QRcode);
         mysqli_stmt_execute($stmt);
         mysqli_stmt_close($stmt);
-        header("location: ../../../staff/consumerC/delete_consumer.inc.php?error=success");
+        header("location: ../../../../staff/consumerC/delete_consumer.inc.php?error=success");
         echo"Individual Deleted!";
         exit();
         }
@@ -168,7 +169,7 @@ function addConsumer($connection, $QRcode, $fname, $lname, $email, $passwd, $poi
         mysqli_stmt_bind_param($stmt, "sssssssss", $QRcode, $fname, $lname, $email, $passwd, $pointbalance, $consumertype, $avgweekpoints, $visitnum);
         mysqli_stmt_execute($stmt);
         mysqli_stmt_close($stmt);
-        header("location: ../../../staff/consumerC/register_consumer.php?error=success");
+        header("location: ../../../../staff/consumerC/register_consumer.php?error=success");
         exit();
         }
 }
@@ -190,7 +191,7 @@ function updateConsumer($connection, $QRcode, $pointbalance, $visitnum){
     $sql = "UPDATE consumer SET `point-balance`=?, `visit-num`=? WHERE `QRcode`=?;";
     $stmt = mysqli_stmt_init($connection);
     if(!mysqli_stmt_prepare($stmt, $sql)) {
-        header("location: ../../../staff/consumerC/update_consumer.php?error=failedtoupdate");
+        header("location: ../../../../staff/consumerC/update_consumer.php?error=failedtoupdate");
         echo "Update failed: (". $stmt->errno.") " .$stmt->error. "<br>";
         exit();
         } else {
@@ -198,7 +199,7 @@ function updateConsumer($connection, $QRcode, $pointbalance, $visitnum){
         mysqli_stmt_bind_param($stmt, "sss", $QRcode, $pointbalance, $visitnum);
         mysqli_stmt_execute($stmt);
         mysqli_stmt_close($stmt);
-        header("location: ../../../staff/consumerC/update_consumer.php?error=success");
+        header("location: ../../../../staff/consumerC/update_consumer.php?error=success");
         echo"Database updated!";
         exit();
         }
@@ -239,7 +240,7 @@ function addStaff($connection, $QRcode, $fname, $lname, $email, $passwd, $isadmi
         mysqli_stmt_bind_param($stmt, "ssssss", $QRcode, $fname, $lname, $email, $passwd, $isadmin);
         mysqli_stmt_execute($stmt);
         mysqli_stmt_close($stmt);
-        header("location: ../../../staff/staffC/add_staff.php?error=success");
+        header("location: ../../../../staff/staffC/add_staff.php?error=success");
         exit();
         }
 }
@@ -261,7 +262,7 @@ function updateStaff($connection, $QRcode, $fname, $lname, $email, $passwd){
     $sql = "UPDATE individual SET `fname`=?, `lname`=?, `email`=?, `passwd`=? WHERE `QRcode`=?;";
     $stmt = mysqli_stmt_init($connection);
     if(!mysqli_stmt_prepare($stmt, $sql)) {
-        header("location: ../../../staff/staffC/update_staff.php?error=failedtoupdate");
+        header("location: ../../../../staff/staffC/update_staff.php?error=failedtoupdate");
         echo "Update failed: (". $stmt->errno.") " .$stmt->error. "<br>";
         exit();
         } else {
@@ -269,7 +270,7 @@ function updateStaff($connection, $QRcode, $fname, $lname, $email, $passwd){
         mysqli_stmt_bind_param($stmt, "sssss", $QRcode, $fname, $lname, $email, $passwd);
         mysqli_stmt_execute($stmt);
         mysqli_stmt_close($stmt);
-        header("location: ../../../staff/staffC/update_staff.php?error=success");
+        header("location: ../../../../staff/staffC/update_staff.php?error=success");
         echo"Database updated!";
         exit();
         }
@@ -288,7 +289,7 @@ function deleteStaff($connection, $QRcode) {
         mysqli_stmt_bind_param($stmt, "s", $QRcode);
         mysqli_stmt_execute($stmt);
         mysqli_stmt_close($stmt);
-        header("location: ../../../staff/staffC/delete_staff.inc.php?error=success");
+        header("location: ../../../../staff/staffC/delete_staff.inc.php?error=success");
         echo"Staff Member Deleted!";
         exit();
         }
