@@ -3,13 +3,11 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-    <link rel="stylesheet" href="./assets/css/homePage/Footer-Clean.css"/>
     <link rel="stylesheet" href="./assets/css/homePage/Header-Blue.css"/>
     <link rel="stylesheet" href="./assets/css/homePage/Header-Dark.css"/>
     <link rel="stylesheet" href="./assets/css/homePage/Lightbox-Gallery.css"/>
     <link rel="stylesheet" href="./assets/css/homePage/Navigation-with-Buttons.css"/>
     <link rel="stylesheet" href="./assets/css/homePage/Simple-Slider.css"/>
-    <link rel="stylesheet" href="./assets/css/homePage/Footer.css"/>
     <link rel="stylesheet" href="./assets/css/homePage/Nav-Bar.css"/>
     <link rel="stylesheet" href="./assets/css/homePage/Buttons.css"/>
     <link rel="stylesheet" href="./assets/css/homePage/styles.css"/>
