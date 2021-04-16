@@ -4,6 +4,7 @@ echo '<title> Consumer Controller - Foodpantry</title>';
     include('../skel/navbar/consumerC.php');
 
    //this is to view the table, but for some reason, it does not work, gives errors
+    include('../assets/includes/dbh.inc.php');
     include('../assets/includes/staff/consumerC/view_consumer.php');
     include('../assets/includes/staff/staffFunctions.inc.php');
 

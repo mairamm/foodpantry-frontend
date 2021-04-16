@@ -33,8 +33,8 @@ function updateInventory($connection, $prodid, $quantity, $pointcost, $expiratio
 
 // Function to check if product id field is empty or not
 function prodidEmpty($prodid) {
-        $result
-        if (empty($prodid){
+        $result;
+        if(empty($prodid)){
             $result == true;
         } else {
                 $result == false;
