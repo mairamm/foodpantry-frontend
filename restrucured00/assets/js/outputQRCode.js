@@ -3,8 +3,9 @@
 document.write('<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" ></script>');
 
 function outputQRCodetoID(id, data) {
-  var link = "174.135.102.61/project/foodpantryTEST/"
-    + "foodpantry-frontend/restrucured/signup.php?qrcode="
+  var host = window.location.host;
+  var link = host + "/project/foodpantryTEST/"
+    + "foodpantry-frontend/restrucured00/signup.php?qrcode="
     + data;
   //var link = "google.com";
   var qrc = new QRCode(document.getElementById(id), {
