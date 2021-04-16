@@ -4,7 +4,7 @@
 <?php
 include('../skel/header.php');
 include('../skel/navbarAdd.php');
-//include('queries/add_item.php');
+//include('../queries/add_item.php');
 ?>
 
 <body>

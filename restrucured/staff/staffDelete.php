@@ -2,9 +2,9 @@
 <html>
 
 <?php
-include('skel/header.php');
-include('skel/navbarDelete.php');
-//include('queries/delete_item.php');
+include('../skel/header.php');
+include('../skel/navbarDelete.php');
+include('queries/delete_item.php');
 ?>
 
 <body>
@@ -21,7 +21,11 @@ include('skel/navbarDelete.php');
 <p><label for="prod-id">Product ID</label><input class="form-control" type="ID" name="prod-id" id="prodid">
 
 <br>
-<input type="submit" value="submit" style="background: #ffc629;color: rgb(0,0,0);padding: 8px 20px;">		
+<!--
+<input type="Submit" value="Submit" style="background: #ffc629;color: rgb(0,0,0);padding: 8px 20px;">		
+-->
+
+<button class="btn btn-primary btn-block" type="Submit" name="Submit">Submit</button>
 <br>
 <br>
 </form>

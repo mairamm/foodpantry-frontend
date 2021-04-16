@@ -5,25 +5,29 @@ include ('dbh.inc.php');
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
+$db = mysqli_connect("localhost","alopez","qWECGWGYh?fPByLxe@a", "foodpantry");
 
+$statement1 = mysqli_prepare($db, "INSERT INTO inventory (`prod-id`,quantity,`point-cost`, `expiration-date`) VALUES(?,?,?,?);");
+$statement2 = mysqli_prepare($db, "INSERT INTO `brandType` (`brand-id`,`brand-name`,`produce-type`) VALUES(?,?,?);");
 
- $prodid = mysqli_real_escape_string($connection, $_POST['prod-id']);
- $brandid = mysqli_real_escape_string($connection, $_POST['brand-id']);
- $quantity = mysqli_real_escape_string($connection, $_POST['quantity']);
- $pointcost = mysqli_real_escape_string($connection, $_POST['point-cost']);
- $expirationdate = mysqli_real_escape_string($connection, $_POST['expiration-date']);
- $brandname = mysqli_real_escape_string($connection, $_POST['brand-name']);
- $producetype = mysqli_real_escape_string($connection, $_POST['produce-type']);
+if(!$statement1) {
+    echo "Prepare failed: (". $db->errno.") ".$db->error. "<br>";
+    }
 
-//will insert data from the user into the inventory 
- $sql = "INSERT INTO inventory(`prod-id`, `brand-id`, quantity, `point-cost`, `expiration-date`, `brand-name`, `produce-type`) VALUES('" . $prodid . "','" . $brandid . "','" . $quantity . "','" . $pointcost . "','" . $expirationdate . "','" $brandname . "','" $producetype ."',0 )";
+if(!$statement2) {
+    echo "Prepare failed: (". $db->errno.") ".$db->error. "<br>";
+    }
 
- if(mysqli_query($connection, $sql)) {
-	 
-	echo "Added to Inventory.";
-} else{
-    echo "ERROR: Could not update $sql. " . mysqli_error($connection);
-}
+$statement1->bind_param('ssss', $prodid, $quantity, $pointcost, $expirationdate);
+$statement2->bind_param('sss', $brandid, $brandname, $producetype);
+
+if($statement1->execute() && $statement2->execute()) {
+    echo "Added!";
+    }
+    else {
+        echo "Error" . mysqli_error($db);
+        die();
+    }
 
 mysqli_close($connection);
 ?>

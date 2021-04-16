@@ -8,7 +8,7 @@ include('../skel/navbarAdd.php');
 ?>
 
 <body>
-<form action="../queries/update_inv.php" method="post">
+<form action="" method="post">
 <main class="page lanidng-page"></main>
 <section class="portfolio-block website gradient" style="background: url(&quot;./assets/img/gray.png&quot;);">
 
@@ -18,16 +18,16 @@ include('../skel/navbarAdd.php');
 <div class="form-group">
 <div class="form-row">
 
-<p><label for="prod-id">Product ID</label><input class="form-control" type="text" name="prod-id" id="prodid"></p>
-<p><label for="brand-id">Brand ID</label><input class="form-control" type="text" name="brand-id" id="brand-id"></p>
-<p><label for="quantity">Quantity</label><input class="form-control" type="text" name="quantity" id="quant"></p>
-<p><label for="point-cost">Point cost</label><input class="form-control" type="text" name="point-cost" id="cost"></p>
-<p><label for="expiration-date">Expiration date</label><input class="form-control" type="text" name="expiration-date" id="expire"></p>
-<p><label for="brand-name">Brand name</label><input class="form-control" type="text" name="brand-name" id="brandname"></p>
-<p><label for="produce-type">Produce type</label><input class="form-control" type="text" name="produce-type" id="prodtype"></p>
+<p><label for="prod-id">Product ID</label><input class="form-control" type="ID" name="prod-id" id="prodid"></p>
+<p><label for="quantity">Quantity</label><input class="form-control" type="text" name="quantity" id="quantity"></p>
+<p><label for="point-cost">Point cost</label><input class="form-control" type="text" name="point-cost" id="pointcost"></p>
+<p><label for="expiration-date">Expiration date</label><input class="form-control" type="text" name="expiration-date" id="expirationdate"></p>
 
 <br>
-<input type="submit" value="submit" style="background: #ffc629;color: rgb(0,0,0);padding: 8px 20px;">
+<!--
+<input type="Submit" value="Submit" style="background: #ffc629;color: rgb(0,0,0);padding: 8px 20px;">
+-->
+<button class="btn btn-primary btn-block" type="Submit" name="Submit">Submit</button>
 <br>
 <br>
 </div>

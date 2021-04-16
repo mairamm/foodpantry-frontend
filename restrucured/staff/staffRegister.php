@@ -9,6 +9,7 @@ error_reporting(E_ALL);
 <script src="../assets/js/outputQRCode.js"></script>
 
 <body>
+  <!-- Where QRcode will be outputted -->
   <div id="qrcode"></div>
 </body>
 

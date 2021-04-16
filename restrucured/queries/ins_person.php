@@ -1,26 +1,59 @@
 <?php
-//include handles connection to the database
-include 'dbh.inc.php';
-
-//displays all errros and warnings
+//displays all errors or warnings
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-$QRcode = mysqli_real_escape_string($connection, $_POST['QRcode']);
-$fname = mysqli_real_escape_string($connection, $_POST['Firstname']);
-$lname = mysqli_real_escape_string($connection, $_POST['Lastname']);
-$email = mysqli_real_escape_string($connection, $_POST['Email']);
-$passwd = mysqli_real_escape_string($connection, $_POST['Password']);
+// once button is pressed, run
+if (isset($_POST["signupUserSubmit"])) {
+    $fname = $_POST["fname"];
+    $lname = $_POST["lname"];
+    $email = $_POST["email"];
+    $passwd = $_POST["passwd"];
+    $passwdRepeat = $_POST["passwdRepeat"];
+    $checksPassed = true;
 
-//this will allow the employee to add new people into the database
-$sql = "INSERT INTO individual (QRcode, Firstname, Lastname, Email, Password) VALUES('" . $QRcode . "','" . $fname ."','" . $lname . "','" . $email . "','" $passwd . "')";
+    //include handles connection to the database
+    require_once ('dbh.inc.php');
+    require_once ('ins_personFunc.inc.php');
 
-if(mysqli_query($connection, $sql)){
-    echo "User added successfully!";
-} else{
-echo "ERROR: Could not add $sql. " . mysqli_error($connection);
+    // if not directed from QRcode
+    //  let user know to visit pantry to sign up
+    if (!isset($_GET["qrcode"])) {
+      echo "Must visit Foodpantry to complete registration";
+      exit();
+    } else {
+      $QRcode = $_GET["qrcode"];
+    }
+    // checking correct name syntax
+    if (badSyntaxFname($fname) == true) {
+      echo "No Numbers, or spaces for names ";
+      $checksPassed = false;
+    }
+    if (badSyntaxLname($lname) == true) {
+      echo "No Numbers, or spaces for names ";
+      $checksPassed = false;
+    }
+    // checking correct email syntax
+    if (invalidEmail($email) == true) {
+      echo "Email inputted incorrectly ";
+      $checksPassed = false;
+    }
+    // if passwords do not match
+    if (passwdMatching($passwd, $passwdRepeat) == true) {
+      echo "Passwords must match ";
+      $checksPassed = false;
+    }
+    // if email taken by another user
+    if (emailTaken($connection, $email) == true) {
+      echo "Email already in use ";
+      $checksPassed = false;
+    }
+
+    // if passed all checks, insert into the database
+    if ($checksPassed == true) {
+      signupUser($connection, $QRcode, $fname, $lname, $email, $passwd);
+    }
 }
 
-mysqli_close($connection);
 ?>
