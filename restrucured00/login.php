@@ -7,27 +7,26 @@ echo '<title>Login - Foodpantry</title>';
 ?>
 <head>
     <link rel="stylesheet" href="assets/css/homePage/login.css"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 </head>
 
 <section class="page-section clearfix">
 <div class="container">
  <div class="product-item">
 
-    <img src="./assets/img/fpLogo.jpg" style="width: 350px; padding-left: 90px; padding-top:60px;"/>
-
     <div class="login-card" style="text-align: center;">
         <form action="assets/includes/login.inc.php" method="post" id="application-form" class="form-signin">
         <input type="email" class="form-control" name="email" id="em" required placeholder="Email address" autofocus />
         <input type="password" class="form-control" id="pswd" name="passwd" required placeholder="Password" />
-        <input type="submit" value="submit" name="loginUserSubmit" style="background: #ffc629;color: rgb(0,0,0);padding: 8px 20px;">
+        <button class="btn btn-primary btn-block btn-lg btn-signin" type="submit" value="submit" name="loginUserSubmit" style="text-align: center;">Sign In</button>
 
         <p>Don't have an account?</p>
-    <button class="btn btn-primary btn-block btn-lg btn-signin" type="submit" style="width: 200px;text-align: center;">Sign Up</button>
+        <center><button class="btn btn-primary btn-block btn-lg btn-signin" id="signupB" type="submit" style="width: 200px;text-align: center;">Sign Up</button></center>
       </form>
     </div>
  </div>
 </div>
-
 </section>
 
 <br><br><br>

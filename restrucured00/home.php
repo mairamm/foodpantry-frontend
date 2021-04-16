@@ -7,6 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
     <link rel="stylesheet" href="./assets/css/lib/bootstrap.min.css">
+
 </head>
 
 <body>
@@ -24,7 +25,7 @@
 </section>
 
 
-    <section class="page-section">
+    <section class="page-section" style="background-color: white;">
         <div class="container">
             <div class="product-item">
                 <div class="d-flex product-item-title">
@@ -37,19 +38,24 @@
     </section>
 
 
-    <section class="page-section">
+    <section class="page-section" style="background-image: url('https://maindata.csub.edu/sites/maindata.csub.edu/files/bg-roadrunner.jpg'); background-position: right 80%; background-size: cover; background-repeat: no-repeat;">
         <div class="container">
             <div class="product-item">
                 <div class="d-flex product-item-title">
                     <div class="d-flex ml-auto bg-faded p-5 rounded">
-                        <div>
+                        <div><div>
                         <h2 class="section-heading mb-0"><span class="section-heading-lower" style="text-align: right;">Our Location</span>
+                        <img class="img-fluid d-flex mx-auto product-item-img mb-3 mb-lg-0 rounded" src="./assets/img/Food pantry map.png" style="float: right">
                         <span class="section-heading-upper"><strong>Hours of Operation During Closure</strong></span>
-
+                        <p style="font-size: 16px;">
+                        <strong>Monday</strong> 10 a.m. - 2 p.m.<br>
+                        <strong>Tuesday</strong> 2 p.m. - 6 p.m.<br>
+                        <strong>Wednesday</strong> 10 a.m. - 2 p.m.<br>
+                        <strong>Thursday</strong> 2 p.m. - 6 p.m.<br>
+                        <strong>Friday</strong> 10 a.m. - 2 p.m.</p>
                 <br><span class="section-heading-upper"><strong>Volunteering</strong></span></h2>
-                <p style="font-size: 16px;">Want to volunteer at the Food Pantry, Edible Garden or at any of our Sustainability Events,<br> Click below to sign up!</p>
+                <p style="font-size: 16px;">Want to volunteer at the Food Pantry, Edible Garden or at any of our Sustainability Events, Click below to sign up!</p>
                 <a href="https://signup.com/go/xrLkksd"><img src="./assets/img/volunteerBtn.png"/></a>
-                <img class="img-fluid d-flex mx-auto product-item-img mb-3 mb-lg-0 rounded" src="./assets/img/Food pantry map.png">
                     </div>
                 </div>
             </div>
