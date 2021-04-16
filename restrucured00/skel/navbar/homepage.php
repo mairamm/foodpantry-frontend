@@ -18,7 +18,9 @@
         <div class="container">
 
         <a class="navbar-brand" href="http://174.135.102.61/project/foodpantry-frontend/restrucured/homepage.php" style="color: rgb(255,255,255);font-size: 35px;font-style: normal;font-family: 'Roboto Slab', serif;">Food Pantry</a>
-        <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="navbar-toggler-icon"></span></button>
+        
+        
+        <button data-toggle="collapse" class="navbar-toggler navbar-dark" data-target="#navcol-1"><span class="navbar-toggler-icon"></span></button>
 
             <div class="collapse navbar-collapse" id="navcol-1">
 
