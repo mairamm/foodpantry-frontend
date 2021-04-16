@@ -38,7 +38,3 @@ echo '<title> Inventory Controller - Foodpantry</title>';
        </form>
         </body>
 
-<?php
-#=================================END-BODY======================================
-    include('../../skel/footer.php');
-?>

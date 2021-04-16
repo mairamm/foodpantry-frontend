@@ -13,5 +13,4 @@ echo '<title> Consumer Controller - Foodpantry</title>';
 
 
 #=================================END-BODY======================================
-    include('../skel/footer.php');
 ?>

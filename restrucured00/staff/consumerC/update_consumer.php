@@ -8,5 +8,4 @@ echo '<title> Consumer Controller - Foodpantry</title>';
 // This include below is just for you to include this link to the method next to the post request when trying to write this page
     include('../../assets/includes/staff/consumerC/update_consumer.inc.php');
 #=================================END-BODY======================================
-    include('../../skel/footer.php');
 ?>
