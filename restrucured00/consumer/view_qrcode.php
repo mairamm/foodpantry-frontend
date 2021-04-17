@@ -18,8 +18,7 @@ error_reporting(E_ALL);
 </body>
 <?php
 if (isset($_SESSION['qrcodesess'])) {
-  $qrcodeid = $_SESSION['qrcodesess']; // debugging
-  echo $qrcodeid;                      // debugging
+  echo "Here is your checkout QRCode: ";
 
   ?>
   <script type="text/javascript">
@@ -29,6 +28,8 @@ if (isset($_SESSION['qrcodesess'])) {
     };
   </script>
   <?php
+} else {
+  echo "Must be signed in to view your checkout QRCode";
 }
 
 
