@@ -126,10 +126,11 @@ function userLogin($connection, $email, $passwd) {
 				exit();
 			} elseif($passwdCheck == true) {
 				session_start();
+				$_SESSION['qrcodesess'] = $row['QRcode'];
 				$_SESSION['elogsess'] = $row['email'];
 				$_SESSION['fnamesess'] = $row['email'];
 				$_SESSION['lnamesess'] = $row['email'];
-				header("location: ../../../homepage.php?error=success");
+				header("location: ../../../home.php?error=success");
 				exit();
 			}
 		} else {
