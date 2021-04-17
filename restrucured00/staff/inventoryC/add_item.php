@@ -24,9 +24,13 @@ echo '<title> Inventory Controller - Foodpantry</title>';
 <p><label for="expiration-date">Expiration date</label><input class="form-control" type="text" name="expiration-date" id="expire"></p>
 <p><label for="brand-name">Brand name</label><input class="form-control" type="text" name="brand-name" id="brandname"></p>
 <p><label for="produce-type">Produce type</label><input class="form-control" type="text" name="produce-type" id="prodtype"></p>
+<p><label for="prod-pic">Produce picture</label><input class="form-control" type="text" name="prod-pic" id="prodpic"></p>
 
 <br>
+<!--
 <input type="submit" value="submit" style="background: #ffc629;color: rgb(0,0,0);padding: 8px 20px;">
+-->
+<button class="btn btn-primary btn-block" type="Submit" name="Submit">Submit</button>
 <br>
 <br>
 </div>

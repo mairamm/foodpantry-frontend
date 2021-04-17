@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../../assets/css/lib/bootstrap.min.css">
+.0<link rel="stylesheet" href="../../assets/css/lib/bootstrap.min.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap" rel="stylesheet">
 
@@ -36,8 +36,8 @@
 
 </div>
 </nav>
-<script src="../../assets/js/jquery.min.js"></script>
-<script src="../../assets/js/bootstrap.min.js"></script>
-<script src="../../assets/js/current-day.js"></script>
+<script src="../restrucured00/assets/js/jquery.min.js"></script>
+<script type="javascript" src="../restrucured00/assets/js/bootstrap.min.js"></script>
+<script src="../restrucured00/assets/js/current-day.js"></script>
 
 </body>

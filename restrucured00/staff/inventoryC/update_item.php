@@ -18,9 +18,13 @@ echo '<title> Inventory Controller - Foodpantry</title>';
 <div class="form-row">
 
 <p><label for="prod-id">Product ID</label><input class="form-control" type="ID" name="prod-id" id="prodid"></p>
+<p><label for="brand-id">Brand ID</label><input class="form-control" type="ID" name="brand-id" id="brandid"></p>
 <p><label for="quantity">Quantity</label><input class="form-control" type="text" name="quantity" id="quantity"></p>
 <p><label for="point-cost">Point cost</label><input class="form-control" type="text" name="point-cost" id="pointcost"></p>
 <p><label for="expiration-date">Expiration date</label><input class="form-control" type="text" name="expiration-date" id="expirationdate"></p>
+<p><label for="brand-name">Brand Name</label><input class="form-control" type="text" name="brand-name" id="brandname"></p>
+<p><label for="produce-type">Produce Type</label><input class="form-control" type="text" name="produce-type" id="producetype"></p>
+<p><label for="prod-pic">Product Picture</label><input class="form-control" type="text" name="prod-pic" id="prodpic"></p>
 
 <br>
 <!--

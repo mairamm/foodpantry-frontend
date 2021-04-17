@@ -16,10 +16,10 @@ echo '<title>Login - Foodpantry</title>';
  <div class="product-item">
 
     <div class="login-card" style="text-align: center;">
-        <form action="assets/includes/login.inc.php" method="post" id="application-form" class="form-signin">
+        <form action="assets/includes/loginSystem/login.inc.php" method="post" id="application-form" class="form-signin">
         <input type="email" class="form-control" name="email" id="em" required placeholder="Email address" autofocus />
         <input type="password" class="form-control" id="pswd" name="passwd" required placeholder="Password" />
-        <button class="btn btn-primary btn-block btn-lg btn-signin" type="submit" value="submit" name="loginUserSubmit" style="text-align: center;">Sign In</button>
+        <button class="btn btn-primary btn-block btn-lg btn-signin" type="submit" value="submit" id="loginUserSubmit" name="loginUserSubmit" role="button" style="text-align: center;">Sign In</button>
 
         <p>Don't have an account?</p>
         <center><button class="btn btn-primary btn-block btn-lg btn-signin" id="signupB" type="submit" style="width: 200px;text-align: center;">Sign Up</button></center>
