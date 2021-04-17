@@ -27,7 +27,7 @@ error_reporting(E_ALL);
       <script type="text/javascript">
         window.onload = function() {
           qrcodeid = "<?php echo $qrcodeid; ?>";
-          outputQRCodetoID("qrcode",qrcodeid);
+          outputQRCodeforRegistration("qrcode",qrcodeid);
         };
       </script>
       <?php

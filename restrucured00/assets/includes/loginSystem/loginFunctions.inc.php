@@ -126,7 +126,7 @@ function userLogin($connection, $email, $passwd) {
 				exit();
 			} elseif($passwdCheck == true) {
 				session_start();
-				$_SESSION['qrcodesess'] = $row['QRcode'];
+				$_SESSION['qrcodesess'] = $row['QRcode'];		// used for outputting consumer's qrcode
 				$_SESSION['elogsess'] = $row['email'];
 				$_SESSION['fnamesess'] = $row['email'];
 				$_SESSION['lnamesess'] = $row['email'];

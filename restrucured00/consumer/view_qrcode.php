@@ -19,13 +19,13 @@ error_reporting(E_ALL);
 <?php
 if (isset($_SESSION['qrcodesess'])) {
   $qrcodeid = $_SESSION['qrcodesess']; // debugging
-  echo $qrcodeid;                      // debugging 
+  echo $qrcodeid;                      // debugging
 
   ?>
   <script type="text/javascript">
     window.onload = function() {
       qrcodeid = "<?php echo $qrcodeid; ?>";
-      outputQRCodetoID("qrcode",qrcodeid);
+      outputQRCodeforCheckout("qrcode",qrcodeid);
     };
   </script>
   <?php
