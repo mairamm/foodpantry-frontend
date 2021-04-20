@@ -15,7 +15,7 @@
 
 <div class="container">
 
-<a class="navbar-brand" href="../restrucured00/home.php" style="color: rgb(255,255,255);font-size: 35px;font-style: normal;font-family: 'Roboto Slab', serif;">Food Pantry</a>
+<a class="navbar-brand" href=".https://cs.csubak.edu/~lsamha/foodpantry-frontend/restrucured00/home.php" style="color: rgb(255,255,255);font-size: 35px;font-style: normal;font-family: 'Roboto Slab', serif;">Food Pantry</a>
 
 
 <button data-toggle="collapse" class="navbar-toggler navbar-dark" data-target="#navcol-1"><span class="navbar-toggler-icon"></span></button>
@@ -32,8 +32,8 @@
 
 </div>
 </nav>
-<script src="../restrucured00/assets/js/jquery.min.js"></script>
-<script type="javascript" src="../restrucured00/assets/js/bootstrap.min.js"></script>
-<script src="../restrucured00/assets/js/current-day.js"></script>
+<script src="https://cs.csubak.edu/~lsamha/foodpantry-frontend/restrucured00/assets/js/jquery.min.js"></script>
+<script type="javascript" src="https://cs.csubak.edu/~lsamha/foodpantry-frontend/restrucured00/assets/js/bootstrap.min.js"></script>
+<script src="https://cs.csubak.edu/~lsamha/foodpantry-frontend/restrucured00/assets/js/current-day.js"></script>
 
 </body>

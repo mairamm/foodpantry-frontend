@@ -11,7 +11,7 @@
 
     <nav class="navbar navbar-lit navbar-expand-md navigation-clean-button" style="background: #0c1975;">
 
-        <div class="container"><a class="navbar-brand" href="../restrucured00/consumer.php" style="color: rgb(255,255,255);font-size: 35px;font-style: normal;font-family: 'Roboto Slab', serif;">FP Home</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand" href="https://cs.csubak.edu/~lsamha/foodpantry-frontend/restrucured00/consumer.php" style="color: rgb(255,255,255);font-size: 35px;font-style: normal;font-family: 'Roboto Slab', serif;">FP Home</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
 
             <div class="collapse navbar-collapse" id="navcol-1">
 
@@ -26,7 +26,7 @@
 
                 </ul>
             </div>
-    <span class="navbar-text actions"><a class="btn btn-primary" role="button" href="../restrucured00/assets/include/loginSystem/logout.inc.php" style="background: #ffc629;color: rgb(12, 25, 117);font-family: 'Roboto Slab', serif;float: right;">Logout</a>
+    <span class="navbar-text actions"><a class="btn btn-primary" role="button" href="https://cs.csubak.edu/~lsamha/foodpantry-frontend/restrucured00/assets/include/loginSystem/logout.inc.php" style="background: #ffc629;color: rgb(12, 25, 117);font-family: 'Roboto Slab', serif;float: right;">Logout</a>
         </div>
     </nav>
 </body>
