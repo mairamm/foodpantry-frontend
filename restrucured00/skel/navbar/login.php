@@ -26,8 +26,6 @@
 
 <li class="nav-item"><a class="nav-link active" href="https://www.csub.edu/sustainability/foodpantry/FAQ_FoodPantry/Food%20Pantry%20Donation%20Suggestions.pdf" style="color: rgb(255,255,255);font-family: 'Roboto Slab', serif;"><strong>Donations</strong></a></li>
 
-<li class="nav-item"><a class="nav-link" href="#" style="color: rgb(255,255,255);font-family: 'Roboto Slab', serif;"><strong>Inventory</strong></a></li>
-
 <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#" style="color: rgb(255,255,255);font-family: 'Roboto Slab', serif;"><strong>Contact</strong></a>
 
 <div class="dropdown-menu"><a class="dropdown-item" style="font-family: 'Roboto Slab', serif;"><strong>661-654-FOOD</strong></a><a class="dropdown-item"><strong>foodpantry@csub.edu</strong></a></div>
