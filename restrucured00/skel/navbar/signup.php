@@ -31,7 +31,7 @@
 
                 </ul>
             </div>
-    <span class="navbar-text actions"><a class="btn btn-primary" role="button" href="http://174.135.102.61/project/foodpantry-frontend/restrucured00/login.php" style="background: #ffc629;color: rgb(12, 25, 117);font-family: 'Roboto Slab', serif;float: right;">Login</a></span>
+    <span class="navbar-text actions"><a class="btn btn-primary" role="button" href="../../login.php" style="background: #ffc629;color: rgb(12, 25, 117);font-family: 'Roboto Slab', serif;float: right;">Login</a></span>
         </div>
     </nav>
 </body>

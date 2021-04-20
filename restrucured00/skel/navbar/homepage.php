@@ -14,7 +14,7 @@
 
         <div class="container">
 
-        <a class="navbar-brand" href="http://174.135.102.61/project/foodpantry-frontend/restrucured00/home.php" style="color: rgb(255,255,255);font-size: 35px;font-style: normal;font-family: 'Roboto Slab', serif;">Food Pantry</a>
+        <a class="navbar-brand" href="../../home.php" style="color: rgb(255,255,255);font-size: 35px;font-style: normal;font-family: 'Roboto Slab', serif;">Food Pantry</a>
 
 
         <button data-toggle="collapse" class="navbar-toggler navbar-dark" data-target="#navcol-1"><span class="navbar-toggler-icon"></span></button>
@@ -34,7 +34,7 @@
 
                 </ul>
             </div>
-    <span class="navbar-text actions"><a class="btn btn-primary" role="button" href="http://174.135.102.61/project/foodpantry-frontend/restrucured00/login.php" style="background: #ffc629;color: rgb(12, 25, 117);font-family: 'Roboto Slab', serif;float: right;">Login</a>
+    <span class="navbar-text actions"><a class="btn btn-primary" role="button" href="../../login.php" style="background: #ffc629;color: rgb(12, 25, 117);font-family: 'Roboto Slab', serif;float: right;">Login</a>
         </div>
     </nav>
     <script src="../restrucured00/assets/js/jquery.min.js"></script>
