@@ -32,12 +32,12 @@
 
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#" style="color: rgb(255,255,255);font-family: 'Roboto Slab', serif;"><strong>Contact</strong></a>
 
-                        <div class="dropdown-menu"><a class="dropdown-item" style="font-family: 'Roboto Slab', serif;"><strong>661-654-FOOD</strong></a><a class="dropdown-item"><strong>foodpantry@csub.edu</strong></a></div>
-                    </li>
+                    <div class="dropdown-menu"><a class="dropdown-item" style="font-family: 'Roboto Slab', serif;"><strong>661-654-FOOD</strong></a><a class="dropdown-item"><strong>foodpantry@csub.edu</strong></a></div>
+
 
                 </ul>
             </div>
-    <span class="navbar-text actions"><a class="btn btn-primary" role="button" href="http://174.135.102.61/project/foodpantry-frontend/restrucured00/login.php" style="background: #ffc629;color: rgb(12, 25, 117);font-family: 'Roboto Slab', serif;float: right;">Login</a> 
+    <span class="navbar-text actions"><a class="btn btn-primary" role="button" href="http://174.135.102.61/project/foodpantry-frontend/restrucured00/login.php" style="background: #ffc629;color: rgb(12, 25, 117);font-family: 'Roboto Slab', serif;float: right;">Login</a>
         </div>
     </nav>
     <script src="../../assets/js/jquery.min.js"></script>
