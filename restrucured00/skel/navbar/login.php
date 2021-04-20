@@ -1,4 +1,4 @@
-.0<link rel="stylesheet" href="../../assets/css/lib/bootstrap.min.css">
+<link rel="stylesheet" href="../../assets/css/lib/bootstrap.min.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap" rel="stylesheet">
 

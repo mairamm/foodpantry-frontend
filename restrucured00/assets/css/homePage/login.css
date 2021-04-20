@@ -1,5 +1,5 @@
 .product-item {
-    padding-top: 100px;
+    padding-top: 15px;
 }
 
 .login-card {
@@ -13,7 +13,7 @@
     padding: 20px 28px;
     max-width: 350px;
     text-align: center;
-    padding-bottom: 24px;
+    padding-bottom: 20px;
     padding-top: 20px;
     font-family: inherit;
     direction: ltr;
