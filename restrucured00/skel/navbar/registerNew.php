@@ -14,7 +14,7 @@
         <div class="container"><a class="navbar-brand" href="https://cs.csubak.edu/~lsamha/foodpantry-frontend/restrucured00/staff.php" style="color: rgb(255,255,255);font-size: 35px;font-style: normal;font-family: 'Roboto Slab', serif;">Food Pantry</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link active" href="../restrucured00/staff.php" style="color: rgb(255,255,255);font-family: 'Roboto Slab', serif;"><strong>BACK TO MAIN SCREEN</strong></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../../staff.php" style="color: rgb(255,255,255);font-family: 'Roboto Slab', serif;"><strong>BACK TO MAIN SCREEN</strong></a></li>
                 </ul>
             </div>
     <form method="post">
