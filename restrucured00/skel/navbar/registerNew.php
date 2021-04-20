@@ -1,14 +1,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap" rel="stylesheet">
-
-<link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@310;400;700&display=swap" rel="stylesheet">
 
 <body style="color: rgb(0,0,0);font-size: 17px;">
 
-    <div class="alert alert-success" role="alert" style="background: #ffc629;margin: 0px 0px 1px;text-align: center;"><span style="text-align: center;color: rgb(0,0,0);font-size: 17px;font-family: 'Quattrocento Sans', sans-serif;"><i class="far fa-bell"></i><a class="link" href="https://www.csub.edu/alert" style="color: rgb(0,0,0);font-family: 'Quattrocento Sans', sans-serif;"><strong>Alerts: </strong><a class="link" href="https://www.csub.edu/covid-19" style="color: rgb(0,0,0);font-family: 'Quattrocento Sans', sans-serif;"> Covid-19 | </a><a class="link" href="https://www.csub.edu/returntocampus" style="color: rgb(0,0,0);font-family: 'Quattrocento Sans', sans-serif;">Return to Campus |</a><a class="link" href="https://www.csub.edu/cares" style="color: rgb(0,0,0);font-family: 'Quattrocento Sans', sans-serif;"> CARES Act</a></span></div>
+    <div class="alert alert-success" role="alert" style="background: #ffc629;margin: 0px 0px 1px;text-align: center;"><span style="text-align: center;color: rgb(0,0,0);font-size: 17px;font-family: 'Quattrocento Sans', sans-serif;"><a class="link" href="https://www.csub.edu/alert" style="color: rgb(0,0,0);font-family: 'Quattrocento Sans', sans-serif;"><strong>Alerts: </strong><a class="link" href="https://www.csub.edu/covid-19" style="color: rgb(0,0,0);font-family: 'Quattrocento Sans', sans-serif;"> Covid-19 | </a><a class="link" href="https://www.csub.edu/returntocampus" style="color: rgb(0,0,0);font-family: 'Quattrocento Sans', sans-serif;">Return to Campus |</a><a class="link" href="https://www.csub.edu/cares" style="color: rgb(0,0,0);font-family: 'Quattrocento Sans', sans-serif;"> CARES Act</a></span></div>
     </div>
 
 
