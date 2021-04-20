@@ -12,7 +12,7 @@
 
     <nav class="navbar navbar-lit navbar-expand-md navigation-clean-button" style="background: #0c1975;">
 
-        <div class="container"><a class="navbar-brand" href="../home.php" style="color: rgb(255,255,255);font-size: 35px;font-style: normal;font-family: 'Roboto Slab', serif;">Food Pantry</a>
+        <div class="container"><a class="navbar-brand" href="../restrucured00/home.php" style="color: rgb(255,255,255);font-size: 35px;font-style: normal;font-family: 'Roboto Slab', serif;">Food Pantry</a>
 
         <button data-toggle="collapse" class="navbar-toggler navbar-dark" data-target="#navcol-1"><span class="nav-toggler-icon"></span></button>
 
