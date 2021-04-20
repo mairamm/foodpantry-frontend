@@ -40,8 +40,8 @@
     <span class="navbar-text actions"><a class="btn btn-primary" role="button" href="http://174.135.102.61/project/foodpantry-frontend/restrucured00/login.php" style="background: #ffc629;color: rgb(12, 25, 117);font-family: 'Roboto Slab', serif;float: right;">Login</a>
         </div>
     </nav>
-    <script src="../../assets/js/jquery.min.js"></script>
-    <script src="../../assets/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/current-day.js"></script>
+    <script src="../restrucured00/assets/js/jquery.min.js"></script>
+    <script type="javascript" src="../restrucured00/assets/js/bootstrap.min.js"></script>
+    <script src="../restrucured00/assets/js/current-day.js"></script>
 
 </body>
