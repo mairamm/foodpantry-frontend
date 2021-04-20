@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="stylesheet" href="./assets/css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/homePage/footer.css">
-    <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 
@@ -42,7 +42,7 @@
                     </ul>
                 </div>
                 <div class="col-md-3 social-networks">
-                    <div></div><a class="facebook" href="#"><i class="fa fa-facebook"></i></a><a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                    <div></div><a class="facebook" href="https://www.facebook.com/CSUB-Food-Pantry-289986308385420/"><i class="fa fa-facebook"></i></a><a class="twitter" href="https://twitter.com/csubfood?lang=en"><i class="fa fa-twitter"></i></a>
                 </div>
             </div>
         </div>
