@@ -128,8 +128,8 @@ function userLogin($connection, $email, $passwd) {
 				session_start();
 				$_SESSION['qrcodesess'] = $row['QRcode'];		// used for outputting consumer's qrcode
 				$_SESSION['elogsess'] = $row['email'];
-				$_SESSION['fnamesess'] = $row['email'];
-				$_SESSION['lnamesess'] = $row['email'];
+				$_SESSION['fnamesess'] = $row['fname'];
+				$_SESSION['lnamesess'] = $row['lname'];
 				header("location: ../../../home.php?error=success");
 				exit();
 			}
