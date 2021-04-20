@@ -19,7 +19,8 @@ error_reporting(E_ALL);
 <?php
 if (isset($_SESSION['qrcodesess'])) {
   echo "Here is your checkout QRCode: ";
-
+  $qrcodeid = $_SESSION['qrcodesess'];
+  echo $qrcodeid;
   ?>
   <script type="text/javascript">
     window.onload = function() {
