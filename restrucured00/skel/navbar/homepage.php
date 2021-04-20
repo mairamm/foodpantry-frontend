@@ -35,8 +35,6 @@
 <div class="dropdown-menu"><a class="dropdown-item" style="font-family: 'Roboto Slab', serif;"><strong>661-654-FOOD</strong></a><a class="dropdown-item"><strong>foodpantry@csub.edu</strong></a></div>
 
 </div>
-<span class="navbar-text actions"><a class="btn btn-primary" role="button" href="http://174.135.102.61/project/foodpantry-frontend/restrucured00/login.php" style="background: #ffc629;color: rgb(12, 25, 117);font-family: 'Roboto Slab', serif;float: right;">Login</a>
-
 </nav>
 <script src="../restrucured00/assets/js/jquery.min.js"></script>
 <script type="javascript" src="../restrucured00/assets/js/bootstrap.min.js"></script>
