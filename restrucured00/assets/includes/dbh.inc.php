@@ -3,9 +3,9 @@
 # This file can be included in any other page to establish a connection
 
 $serverName = "localhost";
-$dbUsername = "foodpantry";
-$dbPasswd = "Dadp4Boxrl";
-$dbName = "foodpantry";
+$dbUsername = "lsamha";
+$dbPasswd = "=TRkkg6ev9XN^eKBYw";
+$dbName = "lsamha";
 
 $connection = mysqli_connect($serverName, $dbUsername, $dbPasswd, $dbName);
 
