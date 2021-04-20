@@ -11,7 +11,7 @@
 
 
     <nav class="navbar navbar-lit navbar-expand-md navigation-clean-button" style="background: #0c1975;">
-	<div class="container"><a class="navbar-brand" href="../inventoryC.php" style="color: rgb(255,255,255);font-size: 35px;font-style: normal;font-family: 'Roboto Slab', serif;">FP Inventory Controller</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+	<div class="container"><a class="navbar-brand" href="../../staff.php" style="color: rgb(255,255,255);font-size: 35px;font-style: normal;font-family: 'Roboto Slab', serif;">Food Pantry</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
 	    <div class="collapse navbar-collapse" id="navcol-1">
 		<ul class="nav navbar-nav mr-auto">
 		    <li class="nav-item"><a class="nav-link active" href="./add_item.php" style="color: rgb(255,255,255);font-family: 'Roboto Slab', serif;"><strong>ADD</strong></a></li>
