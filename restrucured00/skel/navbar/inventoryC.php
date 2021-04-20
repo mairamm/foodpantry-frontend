@@ -5,7 +5,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@310;400;700&display=swap" rel="stylesheet">
 
 <body style="color: rgb(0,0,0);font-size: 17px;">
-    
+
     <div class="alert alert-success" role="alert" style="background: #ffc629;margin: 0px 0px 1px;text-align: center;"><span style="text-align: center;color: rgb(0,0,0);font-size: 17px;font-family: 'Quattrocento Sans', sans-serif;"><a class="link" href="https://www.csub.edu/alert" style="color: rgb(0,0,0);font-family: 'Quattrocento Sans', sans-serif;"><strong>Alerts: </strong><a class="link" href="https://www.csub.edu/covid-19" style="color: rgb(0,0,0);font-family: 'Quattrocento Sans', sans-serif;"> Covid-19 | </a><a class="link" href="https://www.csub.edu/returntocampus" style="color: rgb(0,0,0);font-family: 'Quattrocento Sans', sans-serif;">Return to Campus |</a><a class="link" href="https://www.csub.edu/cares" style="color: rgb(0,0,0);font-family: 'Quattrocento Sans', sans-serif;"> CARES Act</a></span></div>
     </div>
 
@@ -17,7 +17,7 @@
 		    <li class="nav-item"><a class="nav-link active" href="#" style="color: rgb(255,255,255);font-family: 'Roboto Slab', serif;"><strong>ADD</strong></a></li>
 		    <li class="nav-item"><a class="nav-link" href="#" style="color: rgb(255,255,255);font-family: 'Roboto Slab', serif;"><strong>UPDATE</strong></a></li>
 	 <li class="nav-item"><a class="nav-link" href="#" style="color: rgb(255,255,255);font-family: 'Roboto Slab', serif;"><strong>DELETE</strong></a></li>
-	  
+
 			<div class="dropdown-menu"><a class="dropdown-item" href="#" style="color: rgb(255,255,255);font-family: 'Roboto Slab', serif;"><strong>661-654-FOOD</strong></a><a class="dropdown-item" href="#"><strong>foodpantry@csub.edu</strong></a></div>
 		    </li>
 		</ul>
