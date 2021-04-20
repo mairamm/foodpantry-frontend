@@ -19,11 +19,8 @@ echo '<title>Login - Foodpantry</title>';
         <form action="assets/includes/loginSystem/login.inc.php" method="post" id="application-form" class="form-signin">
         <input type="email" class="form-control" name="email" id="em" required placeholder="Email address" autofocus />
         <input type="password" class="form-control" id="pswd" name="passwd" required placeholder="Password" />
-        <button class="btn btn-primary btn-block btn-lg btn-signin" type="submit" value="submit" id="loginUserSubmit" name="loginUserSubmit" role="button" style="text-align: center;">Sign In</button>
-        </form> 
-        <p>Don't have an account?</p>
-        <center><button class="btn btn-primary btn-block btn-lg btn-signin" onclick="location.href='http://174.135.102.61/project/foodpantry-frontend/restrucured/signup.php';" id="signupB" type="submit" style="width: 200px; text-align: center;">Sign Up</button></center>
-      
+        <button class="btn btn-primary btn-block btn-lg btn-signin" type="submit" value="submit" id="loginUserSubmit" name="loginUserSubmit" role="button" style="text-align: center;">Log In</button>
+        </form>
     </div>
  </div>
 </div>
