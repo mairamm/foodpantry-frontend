@@ -130,7 +130,7 @@ function userLogin($connection, $email, $passwd) {
 				$_SESSION['elogsess'] = $row['email'];
 				$_SESSION['fnamesess'] = $row['fname'];
 				$_SESSION['lnamesess'] = $row['lname'];
-				header("location: ../../../home.php?error=success");
+				header("location: ../../../staff.php?error=success");
 				exit();
 			}
 		} else {
