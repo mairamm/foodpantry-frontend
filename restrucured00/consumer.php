@@ -10,7 +10,9 @@ echo '<title> Homepage - Foodpantry</title>';
 <form action="./consumer/view_qrcode.php" method="post" class="form-inline">
   <button type="submit" name="submitViewQRcode" class="btn btn-primary mb-2">View QR code</button>
 </form>
-
+<?php
+include('../assets/includes/consumer/view_inventory.inc.php');
+?>
 <form action="./consumer/view_points.php" method="post" class="form-inline">
   <button type="submit" name="submitViewPoints" class="btn btn-primary mb-2">View available points</button>
 </form>
